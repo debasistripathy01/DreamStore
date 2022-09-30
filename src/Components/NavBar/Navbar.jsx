@@ -33,6 +33,7 @@ import dropDownTen from "./utils/dropDown10.json"
 import dropDownEleven from "./utils/dropDown11.json"
 
 import dropdownTwelve from "./utils/dropDown12.json"
+import { ResponsiveNavBar } from "./ResponsiveNav";
 
 export const Navbar = () => {
   // const [isMobail, setisMobail] = useState(false);
@@ -98,14 +99,14 @@ const { CartCount } = useSelector((state) => state);
 
   // Navigate to Login Page
   const handleLogin = () => {
-    // navigate("/login");
+    navigate("/login");
   };
 
 
   // Register the USER  data in registering PAage
 
   const handleRegister = () => {
-    // navigate("/Signup");
+    navigate("/Signup");
   };
 
 
@@ -218,11 +219,8 @@ const { CartCount } = useSelector((state) => state);
               onMouseLeave={() => setShowLoginDrop(false)}
             >
               <Link
-                to="/login"
+                to="/signup"
                 className="link"
-                style={{
-                  
-                }}
               >
                 <div>
                   <svg
@@ -247,7 +245,7 @@ const { CartCount } = useSelector((state) => state);
                 </div>
 
                 {/* LogIn and LogOut DropDown COnditions */}
-                <p style={{ marginTop: "12px" }}>Account</p>
+                <p >Account</p>
 
               </Link>
               {showLoginDrop ? (
@@ -266,17 +264,18 @@ const { CartCount } = useSelector((state) => state);
                       </button>
                     </div>
 
-                    <Link to="/wishlist">My Favorites</Link>
+                    <Link to="#">My Favorites</Link>
                     <Link to="/cart">My Orders</Link>
                     <Link to="/">My Wishlist</Link>
-                    <Link to="/">Your Referals</Link>
+                    <Link to="#">Your Referals</Link>
                   </div>
                 ) : (
                   <div class={css.onLogoutDropDown}>
                     <div class={css.logButtDiv}>
-                      <button className={css.loglot} onClick={handleLogin}>
-                        Login
-                      </button>
+                        <button  className={css.loglot} onClick={handleLogin}>
+                          Login
+                        </button>
+
                       <button className={css.logreg} onClick={handleRegister}>
                         Register
                       </button>

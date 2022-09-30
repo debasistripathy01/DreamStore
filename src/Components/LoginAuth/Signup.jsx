@@ -48,7 +48,7 @@ function Signup() {
             password,
         }
         console.log(payload)
-        fetch("http://localhost:8085/user/signup",{
+        fetch("https://lucky-pink-underclothes.cyclic.app/user/signup",{
             method : "POST",
             body : JSON.stringify(payload),
             headers:{

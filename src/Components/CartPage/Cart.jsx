@@ -71,7 +71,7 @@ const checkout = ()=>{
   return (
     <>
       <Navbar />
-      <div className="cartMain">
+      <div className="cartMain1">
         {/*🙋‍♂️ if cart is Empty 👇 */}
 
         {data.length === 0 && (

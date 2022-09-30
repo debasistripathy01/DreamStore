@@ -21,14 +21,18 @@
 }
 
 /*-------- Upper NavBar Stylings Here ---------*/
+.UserDropDowns_icon_06{
+  margin: auto;
+}
+
 
 .navbarSection{
     /* border: 1px solid greenyellow; */
     width: 98%;
-  position: sticky;
-  background-color: white;
-  top: 0;
-  z-index: 5;
+    position: sticky;
+    background-color: white;
+    top: 0;
+    z-index: 5;
 }
 
 .upperNavbar{
@@ -643,6 +647,9 @@ height: 80%;
      .moba{
         display: none;
      }
+     .ProdSmallDiv>img{
+      width: 70%;
+     }
     
 }
 
@@ -666,6 +673,9 @@ height: 80%;
       background-color: white;
       justify-content: space-around;
     }
+    .ProdSmallDiv>img{
+      width: 70%;
+     }
   }
 
 

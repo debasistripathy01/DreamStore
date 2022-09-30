@@ -1,5 +1,5 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import "./signup.css"
 export const NavbarLoginSingup = () => {
   const navigate = useNavigate()
@@ -8,9 +8,12 @@ export const NavbarLoginSingup = () => {
   }
   return (
     <div>
+      <Link to="/">
         <div className="SignupNavBar" onClick={handleClick}>
+          
                 <img src={require("../Admin/weblogo.png")} alt="" />
             </div>
+      </Link>
     </div>
   )
 }

@@ -30,7 +30,7 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post(`http://localhost:8085/user/login`, {
+      .post(`https://lucky-pink-underclothes.cyclic.app/user/login`, {
         email: email,
         password: password,
       })

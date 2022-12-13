@@ -1,6 +1,6 @@
 {
   "homepage": "https://debasistripathy01.github.io/plausible-porter-6646",
-  "name": "dermstore",
+  "name": "plausible-porter-6646",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -40,5 +40,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }

@@ -78,6 +78,27 @@ This is the Checkout page, which is the last page of the website. The user will 
 > ### • [Deepak Soni](https://github.com/Deepak-197)
 > ### • [Devender Yadav](https://github.com/devender0014)
 > ### • [Shagun Sharma](https://github.com/shagun0061)
+
+
+
+## Technology Using
+> • React,
+> • React-Redux,
+> • React-Router,
+> • Material UI,
+> • Module CSS,
+> • JSON Server
+> • ExpressJS,
+> • MongoDB,
+> • NodeJS
+
+## Tools USing
+> • VS Code
+> • GitHub
+> • Heroku
+> • Git
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -1,3 +1,40 @@
+## INTRODUCTION :
+
+Hello Everyone, We have build a clone of Dermstore. Currently, we are pursuing the Full Stack Web Development course at Masai School. We are in last week of unit 6 which is known by construct week . In this week we build the clone of Dermstore which is given by Masai School . Thanks to Masai School for this opportunity.
+<br>
+
+![App Screenshot](https://i.postimg.cc/c42zv9Rn/dermstore.jpg)
+
+> • Deployed Link - [Dermstore] (https://debasistripathy01.github.io/plausible-porter-6646/)
+
+*System display size 💻 = 1024 to 1680 pixels*
+<br>
+
+
+# Problem Statement
+
+Our Problem statement is to build a pixel-perfect Dermstore website clone. Previously I cloned two websites and some web pages but in this problem, we were supposed to make pages dynamic and responsive too.
+
+## Idea
+
+Since We are pursuing a Full Stack Web Development course at Masai School I was given a project to clone **Dermstore ** which is a skincare and beauty e-commerce site in the United States. Since December 2020, it is a subsidiary of The Hut Group which is a British e-commerce company.  I was given a team of five members including me and the task was to clone the pixel-perfect clone of the website. Let's look at how we designed it 👇. We also Optimized this Whole project Using Plugins too.
+
+## Dermstore Landing Page 👇 💻
+On the Home Page, there are many options like a search bar where users can search products by product name or Brand, then there is also an account option where users can log in or signup and beside it, a cart option is also there and by clicking on the cart option users can see the products which they have added to the cart.
+users can also see new arrivals products and scroll through them just by clicking the buttons which are present on the left and right sides.
+
+## About Project: 
+
+## DermStore Link:- [DermStore](https://www.dermstore.com)
+
+DermStore is a skin care and beauty e-commerce site in the United States.
+It is one of the best places to find some of the highest quality skincare, makeup, haircare, and so much more for both women and men.
+DermStore was founded by dermatologist Craig Kraffert in 1999. In 2012, the company expanded from distributing professional skin care, to consumer cosmetics brands.
+Since December 2020, it is a subsidiary of The Hut Group which is a British e-commerce company.
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -31,40 +68,6 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

@@ -74,7 +74,7 @@ This is the Checkout page, which is the last page of the website. The user will 
 
 
 > ### • [Debasis Tripathy](https://github.com/debasistripathy01)
-> ### • [Harshal ANil Apshunde](https://github.com/HARSHAL-AP)
+> ### • [Harshal Anil Apsunde](https://github.com/HARSHAL-AP)
 > ### • [Deepak Soni](https://github.com/Deepak-197)
 > ### • [Devender Yadav](https://github.com/devender0014)
 > ### • [Shagun Sharma](https://github.com/shagun0061)

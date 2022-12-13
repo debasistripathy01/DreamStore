@@ -1,15 +1,11 @@
-import { cartProdCount, getCartProd } from "./actionType";
 
-export const fetchCartData = (data) => {
-   return {
-    type: getCartProd,
-    payload: data,
-  };
-};
+import { legacy_createStore as createStore } from "redux";
+import { reducer } from "./reducer";
 
-export const cartProductCount = (data) => {
-   return {
-    type: cartProdCount,
-    payload: data,
-  };
-};
+export const store = createStore(reducer);
+
+
+
+
+
+

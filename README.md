@@ -33,8 +33,51 @@ DermStore was founded by dermatologist Craig Kraffert in 1999. In 2012, the comp
 Since December 2020, it is a subsidiary of The Hut Group which is a British e-commerce company.
 
 
+## Home Page :
+
+On the Home Page, there are many options like a search bar where users can search products by product name or Brand, then there is also an account option where users can log in or signup and beside this, cart option or admin panel is also there and by clicking on the cart option users can see the products which they have added to the cart.
+users can also see new arrivals products and scroll through them just by clicking the buttons which are present on the left and right side.
+![App Screenshot](https://snipboard.io/KlZygN.jpg)
+![App Screenshot](https://snipboard.io/2k34SB.jpg)
+![App Screenshot](https://snipboard.io/kXgCne.jpg)
 
 
+### Landing Page
+
+
+## SignUp Page/Login:
+
+
+## Login Page Auth Features:
+
+
+## Footer/NavBar part :-
+
+
+
+## Category Page  :-
+
+
+
+
+### Cart Page :
+
+
+
+### Payment Page:-
+
+
+This is the Checkout page, which is the last page of the website. The user will get redirected to this page once he clicks on the checkout securely button on the cart page. The user needs to fill his account details and then after clicking on submit my order button.
+
+
+### Team Members
+
+
+> ### • [Debasis Tripathy](https://github.com/debasistripathy01)
+> ### • [Harshal ANil Apshunde](https://github.com/HARSHAL-AP)
+> ### • [Deepak Soni](https://github.com/Deepak-197)
+> ### • [Devender Yadav](https://github.com/devender0014)
+> ### • [Shagun Sharma](https://github.com/shagun0061)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

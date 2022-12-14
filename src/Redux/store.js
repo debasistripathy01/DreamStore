@@ -1,5 +1,5 @@
 
-import { applyMiddleware, combineReducers, compose, legacy_createStore} from "redux";
+import { applyMiddleware , combineReducers, compose, legacy_createStore} from "redux";
 import thunk from "redux-thunk";
  
 import {reducer as productReducer} from "./ProdData/reducer"

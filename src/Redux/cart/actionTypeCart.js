@@ -1,1 +1,3 @@
-console.log("dummy")
+export const GET_CART_DATA_REQUEST = "GET_CART_DATA_REQUEST";
+export const GET_CART_DATA_SUCCESS = "GET_CART_DATA_SUCCESS";
+export const GET_CART_DATA_ERROR = "GET_CART_DATA_ERROR";

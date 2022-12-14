@@ -1,13 +1,10 @@
-// import { Allroutes } from './Allroutes';
-import './App.css';
-import Signup from './Components/LoginAuth/Signup';
-
+import { Allroutes } from "./Allroutes";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      {/* <Allroutes /> */}
-      <Signup/>
+      <Allroutes />
     </div>
   );
 }

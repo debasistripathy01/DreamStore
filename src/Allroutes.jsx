@@ -4,7 +4,7 @@ import { Homepage } from './Components/LandingPages/Homepage'
 import { Login } from './Components/LoginAuth/Login'
 import { Signup } from './Components/LoginAuth/Signup'
 import { Cart } from './Components/CartPage/Cart'
-
+import { ProductPage } from './pages/ProductPage'
 //1. HomePage
 //2. Login
 //3. Signup
@@ -19,8 +19,8 @@ export const Allroutes = () => {
       <Route path='/' element={<Homepage />} />
       <Route path='/login' element={<Login />}/>
       <Route path='/signup' element={<Signup />} />
-      <Route path='/product' element={<Product />}/>
-      <Route></Route>
+      <Route path='/product' element={<ProductPage />}/>
+      {/* <Route path='' element={< />}/> */}
       <Route path='/cart' element={<Cart />}></Route>
       <Route></Route>
       <Route></Route>

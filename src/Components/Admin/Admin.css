@@ -1,0 +1,59 @@
+.adminnav{
+    height: 50px;
+    width: 100%;
+    background-color: #eaedf1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0px;
+}
+.adminlogo{
+    width: 33.33%;
+    height: 50px;
+    
+}
+.logo{
+
+height: 100%;
+}
+.adheading{
+    width: 33.33%;
+    height: 50px;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.adheading>h1{
+    font-size: 1rem ;
+    font-weight: 600;
+}
+.adminnavigate{
+    width: 33.33%;
+    height: 50px;
+  
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+}
+.adminnavigate>button{
+    margin-right: 25px;
+}
+.headingfdgsdfh{
+    height: 1000px;
+    width: 300px;
+    background-color: rgb(211, 230, 252);
+    position: fixed;
+    top: 50px;
+    left: 0px;
+    display: block;
+}
+.headingfdgsdfh>div{
+    height: 75px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+   
+}

@@ -1,5 +1,5 @@
 .adminnav{
-    height: 50px;
+    height: 55px;
     width: 100%;
     background-color: #eaedf1;
     display: flex;
@@ -40,20 +40,45 @@ height: 100%;
 .adminnavigate>button{
     margin-right: 25px;
 }
-.headingfdgsdfh{
-    height: 1000px;
-    width: 300px;
-    background-color: rgb(211, 230, 252);
-    position: fixed;
-    top: 50px;
-    left: 0px;
-    display: block;
-}
-.headingfdgsdfh>div{
-    height: 75px;
+
+
+.adminbody{
     width: 100%;
+
+    background-color: aqua;
+    margin: auto;
+    margin-top: 55PX;
     display: flex;
     align-items: center;
-    justify-content:center;
-   
+    justify-content: center;
+}
+.categorypanel{
+    width: 20%;
+    height: 6000px;
+    background-color: rgb(172, 172, 172);
+}
+.categorypanel>div{
+    background-color: rgb(4, 36, 65);
+height: 50px;
+width: 90%;
+margin: auto;
+display: flex;
+align-items: center;
+justify-content: center;
+border: 1px solid rgb(255, 255, 255);
+margin-top: 20px;
+border-radius: 10px;
+color: #eaedf1;
+font:20px bold;
+
+}
+
+
+
+
+
+.rmcatbodubj{
+    width: 80%;
+    height: 6000px;
+    background-color: rgb(255, 255, 255);
 }

@@ -10,7 +10,7 @@ import React, { useRef } from 'react'
 // slider-2: https://i.postimg.cc/d1bKxBKL/banner1.webp
 //slider-3: https://i.postimg.cc/ZnNKf8Jj/banner3.webp
 //slider-4: https://i.postimg.cc/yd4VDJmZ/banner4.webp
-import "./bannercarousel.css"
+// import "./bannercarousel.css"
 
 import { Carousel } from "react-bootstrap";
 

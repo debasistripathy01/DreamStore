@@ -14,6 +14,10 @@ import Signup from './Components/LoginAuth/Signup'
 //    ii. individual
 //4. Cart page
 
+import {Admin} from "./Components/Admin/Admin"
+import { Alladminrout } from './Components/Admin/Alladminrout'
+
+
 export const Allroutes = () => {
   return (
     <Routes>
@@ -22,7 +26,9 @@ export const Allroutes = () => {
       <Route path='/signup' element={<Signup/>} />
       <Route path='/product' element={<ProductPage />}/>
       <Route path='/cart' element={<Cart />}></Route>
-      <Route></Route>
+      <Route path='/admin' element={<Admin />}>
+        <Alladminrout/>
+      </Route>
       <Route></Route>
       <Route></Route>
 

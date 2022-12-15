@@ -1,0 +1,47 @@
+.proddiva{
+    width: 100%;
+    height: 200px;
+    display: flex;
+   
+}
+
+.imagena{
+    width: 40%;
+    height:100%;
+    border: 1px solid red;
+   
+}
+
+.image{
+    height: 100%;
+    
+}
+.descprn{
+    padding: 10px;
+    width: 60%;
+    height:100%;
+    border: 1px solid red;
+    
+}
+.descprn>h1{
+font-size: 18px ;
+font-weight: 500;
+}
+.descprn>div{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    margin-top:25px ;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border: 1px solid red;
+}
+.descprn>div>div{
+    height: 50px;
+    width: 50%;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

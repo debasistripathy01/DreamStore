@@ -16,9 +16,8 @@ import { ProductPage } from './pages/ProductPage';
 //    ii. individual
 //4. Cart page
 
-// import {Admin} from "./Components/Admin/Admin"
-// import { Alladminrout } from './Components/Admin/Alladminrout'
-
+import {Admin} from "./Components/Admin/Admin"
+import { Alladminrout } from './Components/Admin/Alladminrout'
 
 export const Allroutes = () => {
   return (
@@ -27,6 +26,10 @@ export const Allroutes = () => {
       <Route path='/login' element={<Login />}/>
       <Route path='/signup' element={<Signup/>} />
       <Route path='/product' element={<ProductPage />}/>
+      <Route path='/cart' element={<Cart />}></Route>
+      <Route path='/admin' element={<Admin />}>
+        <Alladminrout/>
+      </Route>
       <Route path='/cart' element={<Cart />}/>
       {/* <Route path='/admin' element={<Admin />}>
         <Alladminrout/>

@@ -1,3 +1,9 @@
+.cartMain {
+  text-align: start;
+  padding: 0px 70px;
+  width: 700px;
+}
+
 .cart1 {
   font-family: "Poly Regular", "Times New Roman", serif;
   font-size: 20px;
@@ -7,4 +13,131 @@
   letter-spacing: 0;
   text-transform: none;
   margin-bottom: 0;
+}
+
+.line {
+  height: 1px;
+  border-width: 0;
+  width: 700px;
+
+  color: gray;
+  background-color: gray;
+}
+
+.emptyCart {
+  font-family: "Poly Regular", "Times New Roman", serif;
+  font-size: 24px;
+  line-height: 32px;
+  color: #000;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+  display: block;
+  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
+.continueShopping {
+  font-family: "lato regular", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  color: #000;
+  font-weight: 400;
+  height: 30px;
+  background-color: #222;
+  color: #fff;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #222;
+  border-radius: 1px;
+  display: inline-block;
+  text-decoration: none;
+  transition: background-color 0.2s;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.item {
+  font-family: "lato regular", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  display: grid;
+  grid-template-columns: 50% 15% 20% 10% 5%;
+  color: #000;
+  margin-top: 30px;
+}
+
+.item2 {
+  font-family: "lato regular", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  display: grid;
+  grid-template-columns: 50% 15% 20% 10% 5%;
+  color: #000;
+  height: 100px;
+  margin-top: 10px;
+  line-height: 1.428;
+
+  font-weight: 500;
+}
+
+.subTotal {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.del {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.del:hover {
+  font-size: 20px;
+  color: red;
+  cursor: pointer;
+}
+.qty {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.price {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.plus_min {
+  width: 33px;
+}
+.plus_min:hover {
+  background-color: rgb(93, 78, 78);
+  color: white;
+  border-radius: 50px;
+  height: 20px;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main2{
+  overflow:scroll;
+  width: 700px;
+  height: 500px;
+
 }

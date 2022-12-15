@@ -1,36 +1,90 @@
 .navbaody{
     width: 100%;
     height: 125px;
-    border: 1px solid red;
+    border-bottom: 1px solid grey;
+    
 }
+.navtopbodyyy{
+    height: 35px;
+    background-color: rgb(231, 246, 244);
+}
+
+
+
+
 .navtopbody{
     width: 90%;
-   height: 75px;
+   height:80px;
    margin: auto;
    display: flex;
    align-items: center;
    justify-content: center;
-    border: 1px solid red;
+   
+    
 }
 .navtopbody>div{
     width: 33.33%;
-    height: 75px;
-    border: 1px solid red;
+    height: 60px;
+    
 }
 .useracsection847{
    display: flex;
    align-items: center;
-   justify-content: space-evenly;
+   justify-content:flex-end;
+   gap: 25px;
 }
+.useracsection847>h1{
+    width:150px;
+}
+.searchboxdic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.searchboxdic>input{
+    width: 90%;
+    height:40px;
+    border: 1px solid grey;
+}
+
 .categorydic{
     width: 90%;
     height: 50px;
     margin: auto;
-    border: 1px solid red;
+ 
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 .mainlogo>img{
-height: 100%;
+height: 80%;
+}
+.acountbuton{
+    
+  
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+   font-size: 16px;
+}
+.bottomadd{
+    height: 60px;
+    background-color: rgb(231, 246, 244);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.bottomadd>h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight:600;
+}
+.naviconhgf554{
+    font-size: 25px;
+    font-weight:bolder;
 }

@@ -1,0 +1,75 @@
+.tophead{
+    height: 50px;
+    width: 400px;
+    margin: auto;
+    margin-top: 25px;
+   
+}
+.productoverviewdaa{
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    gap: 20px;
+    display: flex;
+    
+    justify-content: space-evenly;
+    
+}
+.totaldata{
+    width: 90%;
+    height: 100px;
+    margin: auto;
+    margin-top: 20px;
+    gap: 20px;
+    display: flex;
+    
+    justify-content: space-evenly;
+}
+.t123{
+    width: 25%;
+    height: 75%;
+    align-items: center;
+    padding: 15px;
+    background-color: rgb(255, 0, 230);
+    font-size: 20px ;
+    font-weight: 600;
+    border-radius: 15px ;
+    color: aliceblue;
+}
+.t1234{
+    width: 25%;
+    height: 75%;
+    align-items: center;
+    padding: 15px;
+    background-color: rgb(255, 0, 0);
+    font-size: 20px ;
+    font-weight: 600;
+    border-radius: 15px ;
+    color: aliceblue;
+}
+.t1235{
+    width: 25%;
+    height: 75%;
+    align-items: center;
+    padding: 15px;
+    background-color: rgb(255, 208, 0);
+    font-size: 20px ;
+    font-weight: 600;
+    border-radius: 15px ;
+    color: aliceblue;
+}
+.countsdf3{
+    color: aliceblue;
+}
+.productsdisplay{
+    width: 90%;
+   border: 1px solid red;
+   padding: 10px;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:25px;
+    border-radius: 15px;
+}

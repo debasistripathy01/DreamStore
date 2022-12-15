@@ -16,8 +16,13 @@ import { ProductPage } from './pages/ProductPage';
 //    ii. individual
 //4. Cart page
 
+<<<<<<< HEAD
 // import {Admin} from "./Components/Admin/Admin"
 // import { Alladminrout } from './Components/Admin/Alladminrout'
+=======
+import {Admin} from "./Components/Admin/Admin"
+import { Alladminrout } from './Components/Admin/Alladminrout'
+>>>>>>> 110cf54c1b0f26175833e3a6a50ebe324dc0c7ce
 
 
 export const Allroutes = () => {
@@ -27,10 +32,17 @@ export const Allroutes = () => {
       <Route path='/login' element={<Login />}/>
       <Route path='/signup' element={<Signup/>} />
       <Route path='/product' element={<ProductPage />}/>
+<<<<<<< HEAD
       <Route path='/cart' element={<Cart />}/>
       {/* <Route path='/admin' element={<Admin />}>
         <Alladminrout/>
       </Route> */}
+=======
+      <Route path='/cart' element={<Cart />}></Route>
+      <Route path='/admin' element={<Admin />}>
+        <Alladminrout/>
+      </Route>
+>>>>>>> 110cf54c1b0f26175833e3a6a50ebe324dc0c7ce
       <Route></Route>
       <Route></Route>
 

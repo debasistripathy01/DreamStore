@@ -4,8 +4,10 @@ import { Homepage } from './Components/LandingPages/Homepage'
 import { Login } from './Components/LoginAuth/Login'
 // import { Signup } from './Components/LoginAuth/Signup'
 import { Cart } from './Components/CartPage/Cart'
-import { ProductPage } from './pages/ProductPage'
+
 import Signup from './Components/LoginAuth/Signup'
+// import { ProductList } from './pages/ProductList'
+import { ProductPage } from './pages/ProductPage';
 //1. HomePage
 //2. Login
 //3. Signup

@@ -20,10 +20,10 @@ const getDataFailed = () => {
     }
 }
 
-const getData = () => (dispatch) => {
+const getData = (params) => (dispatch) => {
     dispatch(getDataRequest())
 
-    return axios.get('https://frightened-boot-dove.cyclic.app/men')
+    return axios.get('https://frightened-boot-dove.cyclic.app/men', params)
 
     .then((r) => {
         dispatch(getDataSuccess(r.data))

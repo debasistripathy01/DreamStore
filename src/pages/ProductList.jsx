@@ -26,7 +26,7 @@ export const ProductList = () => {
           _order: sortBy
         }
       }
-      dispatch(getData());
+      dispatch(getData(ProductParams));
     }
    }, [location.search, location, dispatch, products.length, searchParams])
 

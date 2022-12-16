@@ -5,6 +5,7 @@ import { getData } from '../Redux/ProdData/action';
 import { ProductCard } from './ProductCard';
 import styled from '@emotion/styled';
 import './ProductList.css'
+import { FilterComp } from './FilterComp';
 
 
 export const ProductList = () => {
@@ -35,25 +36,25 @@ export const ProductList = () => {
   //  }
 
   return (
-    <div className='Product_store'>
-    <h1>products</h1>
-      {products.length > 0 && products.map((item) => {
+    <div className='Product_store_main'>
+   
+      <div className='FilterWrapper'>
+              <FilterComp />
+      </div>
+
+      <div className='product_store'>
+      {/* <h1>products</h1> */}
+        {products.length > 0 && products.map((item) => {
         return (
-          <ProductCardWrapper key={item.id}>
+          <div className='prod_card' key={item.id}>
               <ProductCard data={item} />
-          </ProductCardWrapper>
+          </div>
         )
       })}
+     </div>
 
 
     </div>
   )
 }
 
-const ProductCardWrapper = styled.div`
-  width: 300px;
-  border: 1px solid red;
-  ${'' /* display:grid;
-  grid-template-columns:repeat(3, 1fr);
-  grid-template-rows:repeat(auto) */}
-`;

@@ -1,0 +1,44 @@
+.pdImages{
+    height: 652px;
+    width: 798px;
+    display: flex;
+    margin:15px,30px,15px,5px;
+   
+}
+
+.pdAllImages{
+    width: 80px;
+}
+.sinleSmallImage{
+    height: 90px;
+    width: 90px;
+    border: 1px solid #686464;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.sinleSmallImage>img{
+    height:100%;
+    width: 98%;
+}
+.pdMainImage{
+    height:652px;
+    width:710px;
+    display: flex;
+   
+}
+.divMainImg{
+    height:600px;
+    width: 660px;
+    display: flex;
+}
+.leftArrow,.rightArrow{
+    margin-top: 50%;
+    margin-bottom: 50%;
+    font-weight: 900px;
+}
+.divMainImg>img{
+    height:90%;
+    width: 90%; 
+}
+

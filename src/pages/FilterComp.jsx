@@ -30,14 +30,14 @@ export const FilterComp = () => {
           name="sortBy"
           defaultChecked={sort === 'asc'}
         />
-        <label>Price High to Low</label>
+        <label>Price Low to High</label>
         <br />
         <input type="checkbox"
           value='desc'
           name="sortBy"
           defaultChecked={sort === 'desc'}
         />
-        <label>Price Low to High</label>
+        <label>Price High to Low</label>
        
        </div>
     </div>

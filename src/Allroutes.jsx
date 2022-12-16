@@ -15,7 +15,7 @@ import { ProductPage } from './pages/ProductPage';
 //    i. mumltiple product
 //    ii. individual
 //4. Cart page
-
+import { Makeup } from './pages/Productpages/Makeup'
 import {Admin} from "./Components/Admin/Admin"
 import { Dashboard } from './Components/Admin/Dashboard'
 import { Category } from './Components/Admin/Category'
@@ -30,7 +30,7 @@ export const Allroutes = () => {
       <Route path='/' element={<Homepage />} />
       <Route path='/login' element={<Login />}/>
       <Route path='/signup' element={<Signup/>} />
-      <Route path='/product' element={<ProductPage />}/>
+      <Route path='/product' element={<Makeup />}/>
       <Route path='/cart' element={<Cart />}></Route>
       {/* <Route path='/admin' element={<Admin />}>
         <Alladminrout/>

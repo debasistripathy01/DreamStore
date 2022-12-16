@@ -16,8 +16,9 @@ import { ProductPage } from './pages/ProductPage';
 //    ii. individual
 //4. Cart page
 
-// import {Admin} from "./Components/Admin/Admin"
-// import { Alladminrout } from './Components/Admin/Alladminrout'
+
+import {Admin} from "./Components/Admin/Admin"
+//import { Alladminrout } from './Components/Admin/Alladminrout'
 
 
 export const Allroutes = () => {

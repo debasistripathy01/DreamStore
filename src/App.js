@@ -1,10 +1,12 @@
 
+
 import { Allroutes } from './Allroutes';
 import './App.css';
 // import { Admin } from './Components/Admin/Admin';
 
 // import Signup from './Components/LoginAuth/Signup';
 
+// import Signup from './Components/LoginAuth/Signup';
 
 function App() {
   return (

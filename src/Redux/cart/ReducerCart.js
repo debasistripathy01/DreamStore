@@ -16,7 +16,7 @@ import {
       case GET_CART_DATA_REQUEST: {
         return {
           ...state,
-          isLoading: false,
+          isLoading: true,
         };
       }
       case GET_CART_DATA_SUCCESS: {

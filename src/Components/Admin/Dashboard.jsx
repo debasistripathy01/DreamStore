@@ -6,13 +6,14 @@ import axios from "axios";
 
 export const Dashboard = () => {
 const [data,setdata]=useState([]);
-const getdata=(parm="men")=>{
-  return  axios.get(`https://frightened-boot-dove.cyclic.app/${parm}`)
+const [param,setparam]=useState("men")
+const getdata=(param)=>{
+  return  axios.get(`https://frightened-boot-dove.cyclic.app/${param}`)
   .then((r)=>setdata(r.data)).catch((e)=>console.log(e))
  }
 useEffect(()=>{
-  getdata()
-},[])
+  getdata(param)
+},[param])
 
 console.log(data)
 
@@ -34,12 +35,12 @@ console.log(data)
      </div>
 
       <div className="productoverviewdaa">
-      <Button colorScheme='purple'>Mens</Button>
-      <Button colorScheme='purple'>Skincare</Button>
-      <Button colorScheme='purple'>Trending</Button>
-      <Button colorScheme='purple'>New Arivals</Button>
-      <Button colorScheme='purple'>SkinCare</Button>
-      <Button colorScheme='purple'>Hair</Button>
+      <Button colorScheme='purple' onClick={()=>setparam("men")}>Mens</Button>
+      <Button colorScheme='purple' onClick={()=>setparam("SkinMedica")}>Skincare</Button>
+      <Button colorScheme='purple' onClick={()=>setparam("Neocutis")}>Trending</Button>
+      <Button colorScheme='purple' onClick={()=>setparam("NewArrivals")}>New Arivals</Button>
+      <Button colorScheme='purple' onClick={()=>setparam("skinCare")}>SkinCare</Button>
+      <Button colorScheme='purple' onClick={()=>setparam("hair")}>Hair</Button>
       
        </div>
       <div className="productsdisplay">

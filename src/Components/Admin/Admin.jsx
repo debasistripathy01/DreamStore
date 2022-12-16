@@ -3,6 +3,7 @@ import "./Admin.css"
 import weblogo from "./weblogo.png"
 import { Link } from 'react-router-dom'
 import { Alladminrout } from './Alladminrout'
+import { Outlet } from "react-router-dom"
 export const Admin = () => {
   return (
     <>
@@ -20,15 +21,15 @@ export const Admin = () => {
     </div>
     <div className='adminbody'>
      <div className='categorypanel'>
-     <div><Link to="/dashboard" >Dashboard</Link>  </div>
-     <div><Link to="/category">Category</Link> </div>
+     <div><Link to="dashboard" >Dashboard</Link>  </div>
+     <div><Link to="category">Category</Link> </div>
 
-     <div> <Link to="/addproduct">Add Product</Link> </div>
+     <div> <Link to="addproduct">Add Product</Link> </div>
      
-     <div><Link to="/orders">Orders</Link>  </div>
+     <div><Link to="orders">Orders</Link>  </div>
      </div>
 <div className='rmcatbodubj'>
-<Alladminrout/>
+<Outlet/>
 </div>
 
 

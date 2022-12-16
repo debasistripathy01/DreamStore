@@ -1,0 +1,60 @@
+.footerbody{
+    width: 100%;
+    margin-top: 50px;
+    background-color: rgb(255, 255, 255);
+    height: 500px;
+    border: 1px solid black;
+}
+.fotertop{
+   width: 90%;
+   margin: auto;
+   height: 170px;
+   background-color: rgb(255, 255, 255);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-bottom: 1px solid red;
+}
+.fotertop>div{
+    width: 50%;
+    
+}
+.fotertoph1{
+    text-align: left;
+    font-weight: 500;
+}
+.fotsignupbtn{
+    height: 45px;
+    width: 150px;
+    margin: left;
+    margin-top: 25px;
+    background-color: black;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   color: aliceblue;
+}
+.useritempanal{
+    height:50px;
+    width:400px;
+    margin: left;
+    margin-top: 25px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+   align-items: center;
+   justify-content: left;
+  
+   gap: 25px;
+   
+}
+.useritempanal>div{
+    height: 45px;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    font-size: 25px;
+    
+    border-radius: 50%;
+    background-color: rgb(215, 216, 216);
+}

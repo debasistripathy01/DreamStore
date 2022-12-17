@@ -2,6 +2,8 @@
 
 import { Allroutes } from './Allroutes';
 import './App.css';
+import { AllProducts } from './pages/AllProducts';
+import { ProductImages } from './pages/ProductImage';
 // import { Admin } from './Components/Admin/Admin';
 
 // import Signup from './Components/LoginAuth/Signup';
@@ -11,7 +13,6 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-
 
       <Allroutes />
       

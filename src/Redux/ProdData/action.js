@@ -36,3 +36,6 @@ const getData = (params) => (dispatch) => {
 };
 
 export {getData};
+
+
+// https://frightened-boot-dove.cyclic.app/products

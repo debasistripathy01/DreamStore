@@ -10,6 +10,7 @@ import { NavbarLoginSingup } from "./NavbarLoginSingup"
 
 function Signup() {
 
+    
 
     return (
         <div className="mainSignup">

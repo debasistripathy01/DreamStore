@@ -1,0 +1,93 @@
+.prodbody12{
+    height:auto;
+    width: 90%;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    display: flex;
+}
+.filterbody{
+    width: 20%;
+    
+    
+   
+}
+.poductbodymaincom{
+    width: 80%;
+    
+   
+}
+.producttype{
+    width: 90%;
+    margin: auto;
+    text-align: left;
+    margin-top: 75px;
+    font-size: 25px;
+}
+.categorudiv{
+    height: 50px;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    
+    display: flex;
+    gap: 25px;
+}
+.categorudiv>div{
+height: 40px;
+width: auto;
+display: flex;
+align-items: center;
+justify-content: center;
+border: 2px solid black;
+padding: 15px 15px ;
+font-weight: 500;
+}
+.totalpr{
+    width: 90%;
+    margin: auto;
+    text-align: left;
+
+    font-size: 15px;
+}
+.mainproduts{
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px ;
+    
+}
+.jesica102{
+   
+    width: 100%;
+    margin-top: 75px;
+
+}
+.sortby{
+    width: 90%;
+    margin: auto;
+    text-align: left;
+    font-size: 15px;
+    border-bottom: 1px solid black;
+}
+.checkboxes{
+    height: 15px; 
+    width: 15px;
+}
+.jesica102>div{
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.desctop809{
+    width: 90%;
+    margin: auto;
+    text-align: left;
+    margin-top: 25px;
+    font-size: 15px;
+}

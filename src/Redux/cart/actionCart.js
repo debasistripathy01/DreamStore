@@ -6,7 +6,7 @@ import {
   } from "./actionTypeCart";
   import axios from "axios";
   
-  export const getCartDataRequest = (payload) => {
+  export const getCartDataRequest = ( ) => {
     return {
       type: GET_CART_DATA_REQUEST,
     };
@@ -19,7 +19,7 @@ import {
     };
   };
   
-  export const getCartDataError = (payload) => {
+  export const getCartDataError = ( ) => {
     return {
       type: GET_CART_DATA_ERROR,
     };

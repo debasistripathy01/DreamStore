@@ -1,6 +1,8 @@
 import React from 'react'
 import './ProductCard.css'
 import { useNavigate } from 'react-router-dom'
+import {Navbar} from "../Components/NavBar/Navbar"
+import {Footer} from "../Components/Footer/Footer"
 
 export const ProductCard = ({data}) => {
     const navigate = useNavigate();
@@ -12,6 +14,7 @@ export const ProductCard = ({data}) => {
 
   return (
     <>
+  
         <img className='prodImage' src={data.image} alt={data.title} />
         <h3 className='prodtitle'>{data.title}</h3>
         <h2 className='prodprice'>$ {data.price}</h2>
@@ -20,7 +23,7 @@ export const ProductCard = ({data}) => {
           <p>{data.rating.count}</p>
         </div>
        <div  className='btn' onClick={()=>handleClick()}><button>QUICK BUY</button></div>
-   
+  
     </> 
   )
 }

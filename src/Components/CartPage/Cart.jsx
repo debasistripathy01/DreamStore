@@ -4,6 +4,8 @@ import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { CartItem } from "./CartItem";
 import "./cart.css";
+import {Navbar} from "../NavBar/Navbar"
+import { Footer } from "../Footer/Footer";
 
 export const Cart = () => {
   let dispatch = useDispatch();
@@ -48,6 +50,9 @@ export const Cart = () => {
   }
 
   return (
+
+    <>
+    <Navbar/>
     <div className="cartMain">
       {/*🙋‍♂️ if cart is Empty 👇 */}
 
@@ -200,5 +205,8 @@ export const Cart = () => {
         </h1>
       </div>
     </div>
+    <Footer/>
+    </>
+    
   );
 };

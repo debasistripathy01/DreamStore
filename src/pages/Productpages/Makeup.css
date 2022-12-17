@@ -8,12 +8,13 @@
 .filterbody{
     width: 20%;
     
-    border: 1px solid red;
+    
+   
 }
 .poductbodymaincom{
     width: 80%;
     
-    border: 1px solid red;
+   
 }
 .producttype{
     width: 90%;
@@ -51,9 +52,42 @@ font-weight: 500;
 .mainproduts{
     width: 90%;
     margin: auto;
-
+    margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 50px ;
-    border: 1px solir red;
+    
+}
+.jesica102{
+   
+    width: 100%;
+    margin-top: 75px;
+
+}
+.sortby{
+    width: 90%;
+    margin: auto;
+    text-align: left;
+    font-size: 15px;
+    border-bottom: 1px solid black;
+}
+.checkboxes{
+    height: 15px; 
+    width: 15px;
+}
+.jesica102>div{
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.desctop809{
+    width: 90%;
+    margin: auto;
+    text-align: left;
+    margin-top: 25px;
+    font-size: 15px;
 }

@@ -1,12 +1,13 @@
 .singleprodbody{
     width:100%;
     
-    border: 1px solid red;
+    
     text-align: center;
 }
 .singleprodbody>img{
     width:100%;
 }
+
 
 
 .singleprodbody>h1{

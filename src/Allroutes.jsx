@@ -15,7 +15,12 @@ import { ProductPage } from './pages/ProductPage';
 //    i. mumltiple product
 //    ii. individual
 //4. Cart page
+<<<<<<< Updated upstream
 
+=======
+import { Skincare } from './pages/Productpages/Skincare'
+import { Main } from './pages/Productpages/Main'
+>>>>>>> Stashed changes
 import { Makeup } from './pages/Productpages/Makeup'
 
 
@@ -38,10 +43,15 @@ export const Allroutes = () => {
       <Route path='/signup' element={<Signup/>} />
 
       <Route path='/product' element={<Makeup />}/>
+<<<<<<< Updated upstream
 
       <Route path='/product' element={<ProductPage />}/>
 
 
+=======
+      <Route path='/main' element={<Main />}/>
+      <Route path='/skincare' element={<Skincare />}/>
+>>>>>>> Stashed changes
       <Route path='/cart' element={<Cart />}></Route>
       {/* <Route path='/admin' element={<Admin />}>
         <Alladminrout/>

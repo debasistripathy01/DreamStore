@@ -16,6 +16,10 @@ import { ProductPage } from './pages/ProductPage';
 //    ii. individual
 //4. Cart page
 
+import { Makeup } from './pages/Productpages/Makeup'
+
+
+
 
 import {Admin} from "./Components/Admin/Admin"
 import { Dashboard } from './Components/Admin/Dashboard'
@@ -32,7 +36,11 @@ export const Allroutes = () => {
       <Route path='/' element={<Homepage />} />
       <Route path='/login' element={<Login />}/>
       <Route path='/signup' element={<Signup/>} />
+
+      <Route path='/product' element={<Makeup />}/>
+
       <Route path='/product' element={<ProductPage />}/>
+
 
       <Route path='/cart' element={<Cart />}></Route>
       {/* <Route path='/admin' element={<Admin />}>
@@ -45,7 +53,7 @@ export const Allroutes = () => {
       <Route path='editproduct' element={<Editproduct/>} />
       <Route path='orders' element={<Orders/>} />
       <Route path='addproduct' element={<Addproduct/>} />
-
+      </Route> 
     </Routes>
   )
 }

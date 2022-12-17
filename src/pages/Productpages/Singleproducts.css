@@ -1,0 +1,35 @@
+.singleprodbody{
+    width:100%;
+    
+    border: 1px solid red;
+    text-align: center;
+}
+.singleprodbody>img{
+    width:100%;
+}
+
+
+.singleprodbody>h1{
+    width:100%;
+    text-align: center;
+    margin-top: 20px;
+}
+.ratinstar{
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.addtocartbtn{
+    height: 45px;
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: aliceblue;
+}

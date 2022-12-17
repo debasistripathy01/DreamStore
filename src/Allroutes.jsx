@@ -15,12 +15,9 @@ import { ProductPage } from './pages/ProductPage';
 //    i. mumltiple product
 //    ii. individual
 //4. Cart page
-<<<<<<< Updated upstream
 
-=======
 import { Skincare } from './pages/Productpages/Skincare'
 import { Main } from './pages/Productpages/Main'
->>>>>>> Stashed changes
 import { Makeup } from './pages/Productpages/Makeup'
 
 
@@ -43,27 +40,27 @@ export const Allroutes = () => {
       <Route path='/signup' element={<Signup/>} />
 
       <Route path='/product' element={<Makeup />}/>
-<<<<<<< Updated upstream
+
 
       <Route path='/product' element={<ProductPage />}/>
 
-
-=======
+      <Route path='/cart' element={<Cart />}/>
       <Route path='/main' element={<Main />}/>
       <Route path='/skincare' element={<Skincare />}/>
->>>>>>> Stashed changes
       <Route path='/cart' element={<Cart />}></Route>
+
       {/* <Route path='/admin' element={<Admin />}>
         <Alladminrout/>
       </Route> */}
       <Route path='/admin' element={<Admin />}>
-      <Route index element={<Dashboard/>} />
-      <Route path='dashboard' element={<Dashboard/>} />
-      <Route path='category' element={<Category/>} />
-      <Route path='editproduct' element={<Editproduct/>} />
-      <Route path='orders' element={<Orders/>} />
-      <Route path='addproduct' element={<Addproduct/>} />
+        <Route index element={<Dashboard/>} />
+        <Route path='dashboard' element={<Dashboard/>} />
+        <Route path='category' element={<Category/>} />
+        <Route path='editproduct' element={<Editproduct/>} />
+        <Route path='orders' element={<Orders/>} />
+        <Route path='addproduct' element={<Addproduct/>} />
       </Route> 
+
     </Routes>
   )
 }

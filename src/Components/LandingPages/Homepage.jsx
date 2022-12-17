@@ -1,10 +1,16 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
+import { Footer } from '../Footer/Footer';
 // import { Navbar } from '../NavBar/Navbar';
 import { BannerCarousel } from './BannerCarousel';
+import { FeaturedBrand } from './FeaturedBrands';
+import { FromBlogs } from './FromBlogs';
 
 import "./homepage.css"
+import { NowTrending } from './NowTrending';
 import { ProductsBestSeller } from './ProductsBestSeller';
 import { ShopByCategory, ShopByCategory2 } from './ShopByCategory';
+import { SmallSlider } from './SmallSlider';
 
 
 
@@ -21,34 +27,84 @@ export const Homepage = () => {
             <div className="CaroselDivMain">
                 <BannerCarousel />
             </div>
+
+
+            {/* ASk The Esthetician */}
+            <div>
+                <h3>3x Points on Sunday Riley</h3>
+                <p>
+                    Rewards members earn TRIPLE on the cult-favorite formulas for
+                    radiant-looking skin.{" "}
+                </p>
+                <div className="SlidingProdSmall">
+                    <div className="ProdSmallDiv">
+                    <img
+                        src="https://static.thcdn.com/images/medium/webp/widgets/208-us/47/3x_PTS_Sunday_Riley-070147.png"
+                        alt="prod"
+                    />
+                    </div>
+                    <SmallSlider />
+                </div>
+            </div>
             
             {/* -------------------HomePage Body (Day-1 Step-2 Debasis)------------ */}
             
-
-                    {/* --------Carousel Second One For Products Below Banner page------ */}
-
-            <div className='bestSellers'>
-                <h2>Best Sellers</h2>
-                <ProductsBestSeller />
-            </div>
-
             {/* {SHop By Category } */}
             <div>
                 <h3>Shop By Category</h3>
                 <div className="shop_category">
                     <ShopByCategory />
                 </div>
-                <div className="shop_category2">
-                    <ShopByCategory2 />
+                
+            </div>
+                    {/* --------Carousel Second One For Products Below Banner page------ */}
+
+            <>
+                <h2>Best Sellers</h2>
+                <ProductsBestSeller />
+            </>
+            <div className="shop_category2">
+                <ShopByCategory2 />
+            </div>
+            <div className="SingleImmg">
+                <Link to="/products">
+                    <img
+                    src="https://static.thcdn.com/images/large/webp/widgets/208-us/05/original-Glo_Skin_Disrupter_long-054505.png"
+                    alt="prod"
+                    />
+                    
+                </Link>
+            </div>
+             {/* -----------------{Best Sellelr Part } -------------------*/}
+             <>
+                <h2>Best Sellers</h2>
+                <ProductsBestSeller />
+            </>
+            <div>
+                <h3>Now Trending</h3>
+                <div className="NowTrendingDiv">
+                    <NowTrending />
                 </div>
             </div>
-
-            
+            {/*------------ FeaturedBrand----------- */}
+            <div>
+                <h3>Featured Brands</h3>
+                <div className="FeaturedBrandDiv">
+                    <FeaturedBrand />
+                </div>
+            </div>
+             {/* -----------------{From The Blog } -------------------*/}
+            <div>
+                <h3> From The Blog</h3>
+                <div className="FromTheBlogDiv">
+                    <FromBlogs />
+                </div>
+            </div>
 
         
 
         </section>
-        {/* <Footer/> */}
+        <Footer />
     </div>
   )
 }

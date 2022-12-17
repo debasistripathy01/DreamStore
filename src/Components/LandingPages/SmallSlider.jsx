@@ -34,29 +34,9 @@ const Button = styled.button`
   }
 `;
 
-export const ProductsBestSeller = () => {
+export const SmallSlider = () => {
   return (
     <div className="SlidingProd">
-      <StyleCard>
-        <img
-          src="https://static.thcdn.com/images/large/webp//productimg/1600/1600/11370314-1304944342872775.jpg"
-          alt="pro"
-        />
-        <h6>EltaMD UV Elements Tinted Broad-Spectrum SPF 44 (2 oz.)</h6>
-        <p>Moisturizers</p>
-        <h6>$84</h6>
-        <Button>Quick Buy</Button>
-      </StyleCard>
-      <StyleCard>
-        <img
-          src="https://static.thcdn.com/images/large/webp//productimg/1600/1600/11814869-9924866362390772.jpg"
-          alt="pro"
-        />
-        <h6>EltaMD UV Elements Tinted Broad-Spectrum SPF 44 (2 oz.)</h6>
-        <p>Moisturizers</p>
-        <h6>$84</h6>
-        <Button>Quick Buy</Button>
-      </StyleCard>
       <StyleCard>
         <img
           src="https://static.thcdn.com/images/large/webp//productimg/1600/1600/11207443-2214866130380732.jpg"
@@ -69,7 +49,7 @@ export const ProductsBestSeller = () => {
       </StyleCard>
       <StyleCard>
         <img
-          src="https://static.thcdn.com/images/large/webp//productimg/1600/1600/12666791-4044866391045062.jpg"
+          src="https://static.thcdn.com/images/large/webp//productimg/1600/1600/13674838-2504939183735374.jpg"
           alt="pro"
          />
         <h6>EltaMD UV Elements Tinted Broad-Spectrum SPF 44 (2 oz.)</h6>
@@ -79,7 +59,7 @@ export const ProductsBestSeller = () => {
       </StyleCard>
       <StyleCard>
         <img
-          src="https://static.thcdn.com/images/large/webp//productimg/1600/1600/12459291-1584866382993395.jpg"
+          src="https://static.thcdn.com/images/large/webp//productimg/1600/1600/12905829-1844869965787699.jpg"
           alt="pro"
          />
         <h6>EltaMD UV Elements Tinted Broad-Spectrum SPF 44 (2 oz.)</h6>

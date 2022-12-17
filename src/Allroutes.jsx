@@ -30,21 +30,21 @@ export const Allroutes = () => {
   return (
     <Routes>
       <Route path='/' element={<Homepage />} />
-      <Route path='/login' element={<Login />}/>
+      {/* <Route path='/login' element={<Login />}/>
       <Route path='/signup' element={<Signup/>} />
       <Route path='/product' element={<ProductPage />}/>
 
-      <Route path='/cart' element={<Cart />}></Route>
+      <Route path='/cart' element={<Cart />}/> */}
       {/* <Route path='/admin' element={<Admin />}>
         <Alladminrout/>
       </Route> */}
-      <Route path='/admin' element={<Admin />}>
+      {/* <Route path='/admin' element={<Admin />}/>
       <Route index element={<Dashboard/>} />
       <Route path='dashboard' element={<Dashboard/>} />
       <Route path='category' element={<Category/>} />
       <Route path='editproduct' element={<Editproduct/>} />
       <Route path='orders' element={<Orders/>} />
-      <Route path='addproduct' element={<Addproduct/>} />
+      <Route path='addproduct' element={<Addproduct/>} /> */}
 
     </Routes>
   )

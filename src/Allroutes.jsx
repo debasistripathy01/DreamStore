@@ -18,6 +18,7 @@ import { ProductPage } from './pages/ProductPage';
 
 import { Skincare } from './pages/Productpages/Skincare'
 import { Main } from './pages/Productpages/Main'
+
 import { Makeup } from './pages/Productpages/Makeup'
 
 
@@ -42,11 +43,13 @@ export const Allroutes = () => {
       <Route path='/makeup' element={<Makeup />}/>
 
 
+
       <Route path='/product' element={<ProductList />}/>
 
       <Route path='/cart' element={<Cart />}/>
       <Route path='/main' element={<Main />}/>
       <Route path='/skincare' element={<Skincare />}/>
+
       <Route path='/cart' element={<Cart />}></Route>
 
       {/* <Route path='/admin' element={<Admin />}>

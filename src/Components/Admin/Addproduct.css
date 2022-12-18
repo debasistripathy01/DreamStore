@@ -1,0 +1,38 @@
+.tophead{
+    height: 50px;
+    width: 400px;
+    margin: auto;
+    margin-top: 25px;
+   
+}
+.formbody{
+width: 500px;
+height: 500px;
+margin: auto;
+margin-top: 50px;
+border: 1px solid rgb(194, 192, 192);
+border-radius: 10px;
+
+}
+.forminoput48{
+    height: 40px;
+    width: 400px;
+    margin: auto;
+    margin-top: 20px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding-left: 20px;
+}
+.addbtn{
+    height: 40px;
+    width: 200px;
+    margin: auto;
+    margin-top: 20px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    display: flex;
+    background-color: rgba(13, 96, 107, 0.979);
+    align-items: center;
+    justify-content: center;
+    color:#ffff ;
+}

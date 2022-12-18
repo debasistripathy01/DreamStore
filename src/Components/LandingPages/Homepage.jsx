@@ -10,9 +10,11 @@ import "./homepage.css"
 import { NowTrending } from './NowTrending';
 import { ProductsBestSeller } from './ProductBestSeller';
 import { ShopByCategory, ShopByCategory2 } from './ShopByCategory';
+
 import { SmallSlider } from './firstSlider';
 
 import {Navbar} from "../NavBar/Navbar"
+
 
 
 export const Homepage = () => {

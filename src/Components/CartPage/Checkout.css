@@ -1,0 +1,48 @@
+.checkoutmain {
+  background-color: rgb(242, 242, 242);
+  text-align: start;
+  width: 40%;
+  margin: auto;
+  padding: 20px;
+  margin-top: 40px;
+}
+.payment {
+  background-color: rgb(242, 242, 242);
+  text-align: start;
+  width: 40%;
+  margin: auto;
+  padding: 20px;
+  margin-top: 40px;
+}
+.credit {
+  border: 3px solid black;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 2px;
+}
+input {
+  width: 95%;
+  height: 30px;
+  border-radius: 4px;
+}
+
+label {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.sel {
+  width: 95%;
+  height: 30px;
+  border-radius: 4px;
+  border: 2px solid black;
+}
+
+.submitBtn {
+  background-color: black;
+  color: aliceblue;
+  width: 30%;
+  font-weight: 700;
+  font-size: 20px;
+  border-radius: 4px;
+}

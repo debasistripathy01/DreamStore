@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { getdata } from "../../Redux/cart/actionCart";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { CartItem } from "./CartItem";
+import CartItem from "./CartItem";
 import "./cart.css";
 import { Navbar } from "../NavBar/Navbar";
 import { Footer } from "../Footer/Footer";
@@ -39,7 +39,9 @@ export const Cart = () => {
   let continueShopping = () => {
     navigate("/");
   };
-
+  let GotoCart = () => {
+    navigate("/chekout");
+  };
   useEffect(() => {
     dispatch(getdata());
   }, []);
@@ -53,11 +55,13 @@ export const Cart = () => {
           alignItems: "center",
           fontSize: "50px",
           height: "100vh",
-          background: "black",
-          color: "red",
         }}
       >
-        Loading .....
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Loading_2.gif?20170503175831"
+          alt="error"
+        />
+        Loading Please Wait
       </div>
     );
   }
@@ -175,6 +179,9 @@ export const Cart = () => {
                 className="CoupenCodeInput"
                 placeholder="Got a coupon code? Enter it here:"
                 value={value}
+                style={{
+                  height: "50px",
+                }}
                 onChange={(e) => {
                   setValue(e.target.value);
                 }}
@@ -224,6 +231,11 @@ export const Cart = () => {
             Apply coupon Santa for 10% Discount
           </h1>
         </div>
+      </div>
+      <div className="emptyCart">
+        <button className="continueShopping" onClick={GotoCart}>
+          Checkout
+        </button>
       </div>
       <Footer />
     </>

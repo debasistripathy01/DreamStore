@@ -1,14 +1,16 @@
 .proddiva{
     width: 100%;
-    height: 200px;
+    
     display: flex;
-   
+    padding: 20px;
+   border: 1px solid rgb(226, 206, 206);
+   border-radius: 20px;
 }
 
 .imagena{
     width: 40%;
     height:100%;
-    border: 1px solid red;
+   
    
 }
 
@@ -20,7 +22,7 @@
     padding: 10px;
     width: 60%;
     height:100%;
-    border: 1px solid red;
+  
     
 }
 .descprn>h1{
@@ -35,13 +37,25 @@ font-weight: 500;
     align-items: center;
     justify-content: center;
     gap: 20px;
-    border: 1px solid red;
+   
 }
 .descprn>div>div{
     height: 50px;
     width: 50%;
-    border: 1px solid red;
+    border: 2px solid rgb(122, 66, 66);
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 5px;
+    font-weight: 800;
+}
+.descprn>h5{
+    
+    width: 100%;
+    margin: auto;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 174, 0);
 }

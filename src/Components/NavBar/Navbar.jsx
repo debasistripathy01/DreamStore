@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./Navbar.css";
-import { Link } from "react-router-dom";
+import { Link ,useNavigate} from "react-router-dom";
 import weblogo from "./weblogo.png"
 import {AiOutlineUser} from "react-icons/ai"
 import {FaShoppingBag} from "react-icons/fa"
@@ -8,12 +8,13 @@ import { TfiTruck } from "react-icons/tfi";
 import { TbChartCircles,TbTruck ,TbDiamond} from "react-icons/tb";
 import { FiClock,FiSmartphone,FiGift} from "react-icons/fi";
 export const Navbar = () => {
+  const navigate=useNavigate()
   return (
     <>
     <div className="navtopbodyyy"></div>
       <div className="navbaody">
         <div className="navtopbody">
-          <div className="mainlogo">
+          <div className="mainlogo" onClick={()=>navigate("/")}>
             <img src={weblogo} alt="" />
           </div>
           <div className="searchboxdic">

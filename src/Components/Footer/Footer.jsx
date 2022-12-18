@@ -184,7 +184,7 @@ export const Footer = () => {
           <div>
             <h2>Pay securely with</h2>
           </div>
-          <div>
+          <div className="paymentLogos" style={{ display: "flex", width:"60%", justifyContent:"center", marginLeft:"-4%"}}>
             <img
               id="img1"
               src="https://logowik.com/content/uploads/images/visa-payment-card1873.jpg"

@@ -2,7 +2,9 @@
 
 import { Allroutes } from './Allroutes';
 import './App.css';
+
 import { AllProducts } from './pages/AllProducts';
+
 import { ProductImages } from './pages/ProductImage';
 // import { Admin } from './Components/Admin/Admin';
 
@@ -15,6 +17,8 @@ function App() {
     <div className="App">
 
       <Allroutes />
+
+
       
      {/* <Admin />  */}
       

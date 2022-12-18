@@ -5,9 +5,9 @@ import { Singleproducts } from "./Singleproducts";
 import axios from "axios";
 import {Footer} from "../../Components/Footer/Footer"
 
-export const Main = () => {
+export const New = () => {
   const [data, setdata] = useState([]);
-  const [param, setparam] = useState("men");
+  const [param, setparam] = useState("skincare");
   const getdata = (param) => {
     return axios
       .get(`https://frightened-boot-dove.cyclic.app/${param}`)

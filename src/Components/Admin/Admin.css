@@ -30,31 +30,29 @@ height: 100%;
     font-weight: 600;
 }
 .adminnavigate{
-    width: 33.33%;
+    width: 30%;
     height: 50px;
-  
+    font-size: 20px;
+    font-weight: 700;
     display: flex;
     align-items: center;
     justify-content:flex-end;
 }
-.adminnavigate>button{
-    margin-right: 25px;
-}
+
 
 
 .adminbody{
     width: 100%;
 
-    background-color: aqua;
+  
     margin: auto;
     margin-top: 55PX;
     display: flex;
-    align-items: center;
-    justify-content: center;
+  
 }
 .categorypanel{
     width: 20%;
-    height: 6000px;
+    height:700px;
     background-color: rgb(172, 172, 172);
 }
 .categorypanel>div{
@@ -79,6 +77,15 @@ font:20px bold;
 
 .rmcatbodubj{
     width: 80%;
-    height: 6000px;
+    height:700px;
+    overflow: auto;
     background-color: rgb(255, 255, 255);
+}
+.foterofadsfg{
+    height: 50px;
+    
+    width: 100%;
+    background-color: rgba(0, 174, 255, 0.507);
+  
+    
 }

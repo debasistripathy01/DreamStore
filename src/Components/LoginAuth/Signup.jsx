@@ -24,7 +24,7 @@ function Signup() {
         e.preventDefault()
         if(email&&password){
             dispatch(signup({email,password})).then((r)=>{
-                navigate("/")
+                navigate("/login")
             })
         }
     }

@@ -37,7 +37,7 @@ export const getCartDataError = () => {
 export const getdata = () => (dispatch) => {
   dispatch(getCartDataRequest());
   return axios
-    .get("https://server-dermstore.onrender.com/skincare")
+    .get("https://server-dermstore.onrender.com/cartproduct")
     .then((res) => {
       dispatch(getCartDataSuccess(res.data));
     })
@@ -51,7 +51,7 @@ export const getdata = () => (dispatch) => {
 export const Deletdata = (id) => (dispatch) => {
   dispatch({ type: DELETE_CART_ITEM_REQUEST });
   return axios
-    .delete(`https://server-dermstore.onrender.com/skincare/${id}`)
+    .delete(`https://server-dermstore.onrender.com/cartproduct/${id}`)
     .then((res) => {
       dispatch({ type: DELETE_CART_ITEM_SUCCESS });
     })
@@ -65,7 +65,7 @@ export const Deletdata = (id) => (dispatch) => {
 export const PluseCartdata = (id, qty, opr) => (dispatch) => {
   dispatch({ type: PLUS_CART_ITEM_REQUEST });
   return axios
-    .patch(`https://server-dermstore.onrender.com/skincare/${id}`, {
+    .patch(`https://server-dermstore.onrender.com/cartproduct/${id}`, {
       qty: opr == "+" ? qty + 1 : qty - 1,
     })
     .then((res) => {

@@ -8,7 +8,7 @@ import React,{useEffect,useState} from "react";
   const [data,setdata]=useState([]);
 const [param,setparam]=useState("cart")
 const getdata=(param)=>{
-  return  axios.get(`https://frightened-boot-dove.cyclic.app/${param}`)
+  return  axios.get(`https://server-dermstore.onrender.com/cartproduct`)
   .then((r)=>setdata(r.data)).catch((e)=>console.log(e))
  }
 useEffect(()=>{
@@ -20,14 +20,14 @@ useEffect(()=>{
 const ondeletitem=(id,param)=>{
 
  return axios 
-    .delete(`https://frightened-boot-dove.cyclic.app/${param}/${id}`).then((r)=>{
+    .delete(`https://server-dermstore.onrender.com/cartproduct/${id}`).then((r)=>{
         alert("Product Deleted from Server..")
     }).catch((e)=>{
         console.log(e)
     }).then( getdata(param))
  
 
-    
+    ``
 
 
 }

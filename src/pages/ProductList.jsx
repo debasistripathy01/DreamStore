@@ -6,7 +6,8 @@ import { ProductCard } from './ProductCard';
 import styled from '@emotion/styled';
 import './ProductList.css'
 import { FilterComp } from './FilterComp';
-
+import {Navbar} from "../Components/NavBar/Navbar"
+import {Footer} from "../Components/Footer/Footer"
 
 export const ProductList = () => {
    const products = useSelector((store) => store.productReducer.products)
@@ -36,25 +37,30 @@ export const ProductList = () => {
   //  }
 
   return (
-    <div className='Product_store_main'>
+    <>
+    <Navbar/>
+     <div className='Product_store_main'>
    
-      <div className='FilterWrapper'>
-              <FilterComp />
-      </div>
+   <div className='FilterWrapper'>
+           <FilterComp />
+   </div>
 
-      <div className='product_store'>
-      {/* <h1>products</h1> */}
-        {products.length > 0 && products.map((item) => {
-        return (
-          <div className='prod_card' key={item.id}>
-              <ProductCard data={item} />
-          </div>
-        )
-      })}
-     </div>
+   <div className='product_store'>
+   {/* <h1>products</h1> */}
+     {products.length > 0 && products.map((item) => {
+     return (
+       <div className='prod_card' key={item.id}>
+           <ProductCard data={item} />
+       </div>
+     )
+   })}
+  </div>
 
 
-    </div>
+ </div>
+ <Footer/>
+    </>
+   
   )
 }
 

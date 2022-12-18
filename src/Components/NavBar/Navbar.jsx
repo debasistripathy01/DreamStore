@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./Navbar.css";
-import { Link } from "react-router-dom";
+import { Link ,useNavigate} from "react-router-dom";
 import weblogo from "./weblogo.png"
 import {AiOutlineUser} from "react-icons/ai"
 import {FaShoppingBag} from "react-icons/fa"
@@ -8,12 +8,13 @@ import { TfiTruck } from "react-icons/tfi";
 import { TbChartCircles,TbTruck ,TbDiamond} from "react-icons/tb";
 import { FiClock,FiSmartphone,FiGift} from "react-icons/fi";
 export const Navbar = () => {
+  const navigate=useNavigate()
   return (
     <>
     <div className="navtopbodyyy"></div>
       <div className="navbaody">
         <div className="navtopbody">
-          <div className="mainlogo">
+          <div className="mainlogo" onClick={()=>navigate("/")}>
             <img src={weblogo} alt="" />
           </div>
           <div className="searchboxdic">
@@ -21,35 +22,35 @@ export const Navbar = () => {
           </div>
           <div className="useracsection847">
            
-              <h1 className="acountbuton"><AiOutlineUser className="naviconhgf554"/>Acount</h1>
+              <h1 className="acountbuton"><AiOutlineUser className="naviconhgf554"/><Link to="/login">Account</Link></h1>
             
-              <h1 className="acountbuton"><FaShoppingBag className="naviconhgf554"/>Cart</h1>
+              <h1 className="acountbuton"><FaShoppingBag className="naviconhgf554"/><Link to="/cart">Cart</Link></h1>
             
           </div>
         </div>
         <div className="categorydic">
           
-            <Link >Brands</Link>
+            <Link to="/product">Brands</Link>
           
           
-            <Link >Holidayshop</Link>
+            <Link to="/skincare">Holidayshop</Link>
          
           
-            <Link >Bathandbody</Link>
+            <Link to="/main">Bathandbody</Link>
           
-            <Link >Fragrance</Link>
+            <Link to="/product">Fragrance</Link>
           
-            <Link >Tools And Devices</Link>
+            <Link to="/skincare">Tools And Devices</Link>
           
-            <Link >Gifts</Link>
+            <Link to="/product">Gifts</Link>
          
-            <Link >Makeup</Link>
+            <Link to="/makeup">Makeup</Link>
           
-            <Link >Hairandcare</Link>
+            <Link to="/makeup">Hairandcare</Link>
           
-            <Link >New</Link>
+            <Link to="/main">New</Link>
           
-            <Link >Skincare</Link>
+            <Link to="/skincare">Skincare</Link>
           
         </div>
       </div>

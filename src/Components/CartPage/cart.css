@@ -4,6 +4,7 @@
   width: 1500px;
   display: flex;
   gap: 30px;
+  margin-top:50px;
 }
 .gliters{
   background-image: url("https://media.tenor.com/cQQM6MYCexIAAAAC/yellow-twinkle-shiny.gif");

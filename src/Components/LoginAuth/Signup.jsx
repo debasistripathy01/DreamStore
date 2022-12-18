@@ -5,11 +5,29 @@ import {
     Button, Box, Image
 } from '@chakra-ui/react'
 import { NavbarLoginSingup } from "./NavbarLoginSingup"
+import { useState } from "react"
+import { useDispatch } from "react-redux"
+import { useNavigate } from "react-router-dom"
+import { signup } from "../../Redux/login/action"
 
 
 
 function Signup() {
+    
+    const [email, setEmail] = useState("")
+    const [password, setPassword] = useState("")
+    const dispatch = useDispatch()
+    const navigate = useNavigate()
+    
 
+    const handleSubmit = (e)=>{
+        e.preventDefault()
+        if(email&&password){
+            dispatch(signup({email,password})).then((r)=>{
+                navigate("/")
+            })
+        }
+    }
 
     return (
         <div className="mainSignup">
@@ -35,11 +53,11 @@ function Signup() {
                         <form>
                             <div>
                                 <label>* Full Name</label>
-                                <input type='text' />
+                                <input type='text'/>
                             </div>
                             <div>
                                 <label>* Email address</label>
-                                <input type='email' />
+                                <input type='email' value={email} onChange={(e)=>setEmail(e.target.value)} />
                             </div>
                             <div>
                                 <label>* Confirm Email address</label>
@@ -47,7 +65,7 @@ function Signup() {
                             </div>
                             <div>
                                 <label>* Password</label>
-                                <input type='password' />
+                                <input type='password'  value={password} onChange={(e)=>setPassword(e.target.value)}/>
                             </div>
                             <div>
                                 <label>* Confirm Password</label>
@@ -69,7 +87,7 @@ function Signup() {
                                 <label>Include me in the Dermstore Rewards program Read our terms of use.</label>
                             </div>
                             <div>
-                                <button>CONTINUE</button>
+                                <button onClick={handleSubmit}>CONTINUE</button>
                             </div>
                         </form>
                     </div>

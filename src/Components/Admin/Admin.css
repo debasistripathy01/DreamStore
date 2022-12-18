@@ -44,15 +44,15 @@ height: 100%;
 .adminbody{
     width: 100%;
 
-    
+  
     margin: auto;
     margin-top: 55PX;
     display: flex;
-   
+  
 }
 .categorypanel{
     width: 20%;
-   
+    height:700px;
     background-color: rgb(172, 172, 172);
 }
 .categorypanel>div{
@@ -77,10 +77,15 @@ font:20px bold;
 
 .rmcatbodubj{
     width: 80%;
+    height:700px;
+    overflow: auto;
     background-color: rgb(255, 255, 255);
 }
 .foterofadsfg{
     height: 50px;
+    
     width: 100%;
     background-color: rgba(0, 174, 255, 0.507);
+  
+    
 }

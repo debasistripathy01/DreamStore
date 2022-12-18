@@ -33,7 +33,15 @@ export const Skincare = () => {
         </div>
         <div className="poductbodymaincom">
           <h1 className="producttype">Hair Care Products</h1>
-          <p className="totalpr">Total Products</p>
+          <p className="totalpr">Total Products ;{data.length}</p>
+          <h4 className="desctop809">
+            When you're ready to tackle the world of contouring, highlighting
+            and barely-there makeup looks, let Dermstore be your go-to for
+            cosmetics. Industry faves, such as Dermablend, jane iredale, Jouer
+            and Tarte Cosmetics, often use skin-nourishing ingredients in their
+            classic and playful pieces that draw upon your natural beauty. And
+            since beauty is all about expressing yourself, you can't go wrong.
+          </h4>
           <div className="categorudiv">
             <div>Oribe</div>
             <div>Olaplex</div>

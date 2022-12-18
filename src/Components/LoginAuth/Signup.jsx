@@ -4,6 +4,7 @@ import {
     Text,
     Button, Box, Image
 } from '@chakra-ui/react'
+import { NavbarLoginSingup } from "./NavbarLoginSingup"
 
 
 
@@ -12,9 +13,7 @@ function Signup() {
 
     return (
         <div className="mainSignup">
-            <div className="SignupNavBar">
-                <img src="https://s1.thcdn.com/enterprise/assets/dermstore-global-a3ce7f42-4a2c-4cc5-ad05-ba594900fa02-logo-default.svg" alt="" />
-            </div>
+            <NavbarLoginSingup/>
             <div>
                 <div className="form">
                     <Heading className="head">About You</Heading>

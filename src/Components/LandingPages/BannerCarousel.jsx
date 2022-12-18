@@ -1,6 +1,7 @@
 import React, { useRef } from 'react'
 
 // import { Carousel } from "react-bootstrap"
+import './homepage.css'
 // import "./bannercarousel.css"
 // import Slider from "react-slick";
 // import ArrowBackIosNewSharpIcon from '@mui/icons-material/ArrowBackIosNewSharp';

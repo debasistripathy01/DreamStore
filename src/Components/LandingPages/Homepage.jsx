@@ -11,7 +11,9 @@ import { NowTrending } from './NowTrending';
 import { ProductsBestSeller } from './ProductsBestSeller';
 import { ShopByCategory, ShopByCategory2 } from './ShopByCategory';
 import { SmallSlider } from './SmallSlider';
+
 import {Navbar} from "../NavBar/Navbar"
+
 
 
 export const Homepage = () => {

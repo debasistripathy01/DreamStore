@@ -8,16 +8,17 @@ import { FromBlogs } from './FromBlogs';
 
 import "./homepage.css"
 import { NowTrending } from './NowTrending';
-import { ProductsBestSeller } from './ProductsBestSeller';
+import { ProductsBestSeller } from './ProductBestSeller';
 import { ShopByCategory, ShopByCategory2 } from './ShopByCategory';
-import { SmallSlider } from './SmallSlider';
+import { SmallSlider } from './firstSlider';
+
 import {Navbar} from "../NavBar/Navbar"
 
 
 export const Homepage = () => {
   return (
-    <div>
-<Navbar/>
+    <>
+    <Navbar/>
         {/*------------ Navbar (Day-1 Step-1 Harshal)  ---------------*/}
       {/* <Navbar /> */}
         <section className='homeSection'>
@@ -59,10 +60,10 @@ export const Homepage = () => {
             </div>
                     {/* --------Carousel Second One For Products Below Banner page------ */}
 
-            <>
+            <div>
                 <h2>Best Sellers</h2>
                 <ProductsBestSeller />
-            </>
+            </div>
             <div className="shop_category2">
                 <ShopByCategory2 />
             </div>
@@ -96,15 +97,15 @@ export const Homepage = () => {
              {/* -----------------{From The Blog } -------------------*/}
             <div>
                 <h3> From The Blog</h3>
-                <div className="FromTheBlogDiv">
+                {/* <div className="FromTheBlogDiv"> */}
                     <FromBlogs />
-                </div>
+                {/* </div> */}
             </div>
 
         
 
         </section>
         <Footer />
-    </div>
+    </>
   )
 }

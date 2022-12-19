@@ -8,7 +8,7 @@ export const Singleproducts = ({item}) => {
 
 const addtocart=()=>{
  return axios 
-.post(`https://frightened-boot-dove.cyclic.app/cartproduct`,item).then((r)=>{
+.post(`https://server-dermstore.onrender.com/cartproduct`,item).then((r)=>{
   alert("Product added to cart")
 }).then((e)=>{
     console.log(e)

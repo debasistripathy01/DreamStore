@@ -47,6 +47,7 @@ export const ProductList = () => {
 
    <div className='product_store'>
    {/* <h1>products</h1> */}
+   
      {products.length > 0 && products.map((item) => {
      return (
        <div className='prod_card' key={item.id}>

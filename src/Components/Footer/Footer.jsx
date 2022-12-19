@@ -180,11 +180,13 @@ export const Footer = () => {
           <p id="thg">T H G</p>
           <p>2022 © The Hut.com Ltd.</p>
         </div>
-        <div id="pay_secure_div">
+        <div id="pay_secure_div" >
           <div>
             <h2>Pay securely with</h2>
           </div>
+
           <div className="paymentLogos" style={{ display: "flex", width:"60%", justifyContent:"center", marginLeft:"-4%"}}>
+
             <img
               id="img1"
               src="https://logowik.com/content/uploads/images/visa-payment-card1873.jpg"

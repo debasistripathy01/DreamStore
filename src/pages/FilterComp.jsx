@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
+import "./FilterComp.css"
+import { BsStarFill } from "react-icons/bs";
 
 export const FilterComp = () => {
     const [searchParams, setSearchParams] = useSearchParams();
@@ -22,24 +24,65 @@ export const FilterComp = () => {
      },[setSearchParams, sort])
 
   return (
-    <div>
-       <h1>Sorting</h1>
-       <div onChange={handleSort}>
-        <input type="checkbox"
+
+    <>
+    <div className='filboty76'>
+      <h1 className='filhear637578'>Sort Acording to price</h1>
+       <div>
+       <input type="checkbox"
           value='asc'
           name="sortBy"
           defaultChecked={sort === 'asc'}
+          className="soinpuntjubjf126"
+          onChange={handleSort}
         />
-        <label>Price Low to High</label>
-        <br />
-        <input type="checkbox"
+        Price Low to High
+       </div>
+       <div>
+       <input type="checkbox"
           value='desc'
           name="sortBy"
           defaultChecked={sort === 'desc'}
+          className="soinpuntjubjf126"
+          onChange={handleSort}
         />
-        <label>Price High to Low</label>
-       
+       Price High to Low
        </div>
     </div>
+    <div className='filboty76'>
+            <h1 className='filhear637578'>Rating</h1>
+            <div>
+              <input type="radio" className="checkboxes" />
+              {[...Array(2)].map((elementInArray, index) => (
+                <BsStarFill key={index} />
+              ))}
+            </div>
+            <div>
+              <input type="radio" className="checkboxes" />
+              {[...Array(3)].map((elementInArray, index) => (
+                <BsStarFill key={index} />
+              ))}
+            </div>
+            <div>
+              <input type="radio" className="checkboxes" />
+              {[...Array(4)].map((elementInArray, index) => (
+                <BsStarFill key={index} />
+              ))}
+            </div>
+            <div>
+              <input type="radio" className="checkboxes" />
+              {[...Array(5)].map((elementInArray, index) => (
+                <BsStarFill key={index} />
+              ))}
+            </div>
+          </div>
+
+
+
+
+
+    
+    </>
+    
   )
 }

@@ -1,7 +1,7 @@
 
 
 .Product_store_main{
-    border: 1px solid gray;
+   
     display: flex;
 
 }
@@ -12,7 +12,7 @@
 
 .product_store{
     width: 100%;
-    border: 1px solid pink;
+   
     padding: 30px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, max-content));
@@ -23,7 +23,7 @@
 .prod_card{
     display: flex;
     flex-direction: column;
-    border: 1px solid greenyellow;
+   
     text-align: center;
     padding: 10px;
 }
@@ -33,7 +33,7 @@
     height: 350px;
     /* padding: 7px; */
     margin: auto;
-    border: 1px solid green;
+   
     
 }
 

@@ -1,17 +1,18 @@
-.prodcard{
-  
-}
+
 .rate_count{
     display: flex;
     border: 1px solid transparent;
     justify-content: space-around;
 
 }
+.rate_count>p{
+    display: flex;
+}
 .btn{
-    border: 1px solid black;
+    height:45px;
     background-color: black;
     width: 100%;
-    padding: 10px 0px 10px 0px;
+    border-radius: 0;
     font-weight: bold;
     color: aliceblue;
 }

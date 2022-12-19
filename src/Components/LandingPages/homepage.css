@@ -27,6 +27,7 @@ text-align: center;
   display: flex;
 }
 
+
 /* -------------Styling Foooter For the Good---------------*/
 .FooterMainSection{
   /* border: 1px solid red; */
@@ -139,6 +140,7 @@ justify-content: center;
   width: 100%;
 }
 /* ----------------------------------- */
+
 
 .CrouselText {
     width: 100%;

@@ -68,7 +68,7 @@ export const Makeup = () => {
         </div>
         <div className="poductbodymaincom">
           <h1 className="producttype">Hair Care Products</h1>
-          <p className="totalpr">Total Products</p>
+          <p className="totalpr">Total Products ;{data.length}</p>
           <h4 className="desctop809">
             When you're ready to tackle the world of contouring, highlighting
             and barely-there makeup looks, let Dermstore be your go-to for

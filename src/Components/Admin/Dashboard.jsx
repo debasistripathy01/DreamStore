@@ -1,12 +1,12 @@
 import React,{useEffect,useState} from "react";
 import "./Dashboard.css";
 import { Button, ButtonGroup,Box } from "@chakra-ui/react";
-import { Singleproduct } from "./Singleproduct";
+import { Singleproduct } from "./Singleproduct"; 
 import axios from "axios";
 
 export const Dashboard = () => {
 const [data,setdata]=useState([]);
-const [param,setparam]=useState("men")
+const [param,setparam]=useState("skincare")
 const getdata=(param)=>{
   return  axios.get(`https://frightened-boot-dove.cyclic.app/${param}`)
   .then((r)=>setdata(r.data)).catch((e)=>console.log(e))
@@ -15,7 +15,22 @@ useEffect(()=>{
   getdata(param)
 },[param])
 
-console.log(data)
+
+
+const ondeletitem=(id,param)=>{
+
+ return axios 
+    .delete(`https://frightened-boot-dove.cyclic.app/${param}/${id}`).then((r)=>{
+        alert("Product Deleted from Server..")
+    }).catch((e)=>{
+        console.log(e)
+    }).then( getdata(param))
+ 
+
+    
+
+
+}
 
   return (
     <>
@@ -26,12 +41,12 @@ console.log(data)
      <div className="totaldata">
      <div className="t123">
       <h1>Total Products</h1>
-      <p className="countsdf3">5000</p>
+      <p className="countsdf3">{data.length}0</p>
       </div>
      <div className="t1234"><h1>Weekly Sells</h1>
-      <p className="countsdf3">5000</p> </div>
+      <p className="countsdf3">125</p> </div>
      <div className="t1235"><h1>Weekly order Count</h1>
-      <p className="countsdf3">5000</p></div>
+      <p className="countsdf3">320</p></div>
      </div>
 
       <div className="productoverviewdaa">
@@ -46,7 +61,7 @@ console.log(data)
       <div className="productsdisplay">
         {
           data.length>0&&data.map((item)=>{
-            return <Singleproduct key={item.id} item={item}/>
+            return <Singleproduct key={item.id} item={item} onDelet={()=>ondeletitem(item.id,param)}/>
           })
         }
 

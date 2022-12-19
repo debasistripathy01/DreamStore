@@ -59,11 +59,20 @@
     background-color: rgb(215, 216, 216);
 }
 
-
+.FooterMainSection{
+  width: 100%;
+  border: 1px solid red;
+  margin: auto;
+}
 
 #main {
-    margin-top: 10%;
+  border: 1px solid red;
+    width: 60%;
+    margin: auto;
+    margin-top: 150px;
     display: flex;
+    align-items: center;
+    justify-content: center;
     margin-left: 5%;
     cursor: pointer;
     /* background-color: aqua; */
@@ -91,11 +100,11 @@
     /* padding-left:x; */
   }
   .FooterSection {
+   border: 1px solid red;
     display: flex;
     flex-direction: row;
   }
-  
-  
+
   
   #list_left {
     /* border: 1px solid gray; */

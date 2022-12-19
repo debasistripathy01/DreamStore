@@ -191,10 +191,11 @@ export const Footer = () => {
           <p id="thg">T H G</p>
           <p>2022 © The Hut.com Ltd.</p>
         </div>
-        <div id="pay_secure_div">
+        <div id="pay_secure_div" >
           <div>
             <h2>Pay securely with</h2>
           </div>
+
 
             <div className="paymentLogos">
 
@@ -252,6 +253,7 @@ export const Footer = () => {
                   src="https://logowik.com/content/uploads/images/afterpay-new-20215837.jpg"
                   alt="apple"
                 />
+
 
           </div>
         </div>

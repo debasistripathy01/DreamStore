@@ -1,9 +1,11 @@
+
 import React from 'react';
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 import { Box, Image,Text } from '@chakra-ui/react';
 import { padding } from '@mui/system';
 import styled from "styled-components";
+
 
 
 const StyleCard = styled.div`
@@ -115,6 +117,7 @@ const slideImages =[
     title: "18 Hair, Skin and Body Products to Shop from Allure’s Best of Beauty Awards"
   },
 ]
+
 
 
 
@@ -253,10 +256,12 @@ const sliderImages =[
   },
 ]
 
+
 export const ProductsBestSeller = () => {
 
   
   return (
+
     <div >
             
             <Slide slidesToScroll={5} slidesToShow={5} indicators={true} responsive={responsiveSettings} style={{objectFit:"fill"}}>
@@ -287,55 +292,4 @@ export const ProductsBestSeller = () => {
   )
 };
 
-{/* <div className="SlidingProd">
-      <StyleCard>
-        <img
-          src="https://static.thcdn.com/images/large/webp//productimg/1600/1600/11370314-1304944342872775.jpg"
-          alt="pro"
-        />
-        <h6>EltaMD UV Elements Tinted Broad-Spectrum SPF 44 (2 oz.)</h6>
-        <p>Moisturizers</p>
-        <h6>$84</h6>
-        <Button>Quick Buy</Button>
-      </StyleCard>
-      <StyleCard>
-        <img
-          src="https://static.thcdn.com/images/large/webp//productimg/1600/1600/11814869-9924866362390772.jpg"
-          alt="pro"
-        />
-        <h6>EltaMD UV Elements Tinted Broad-Spectrum SPF 44 (2 oz.)</h6>
-        <p>Moisturizers</p>
-        <h6>$84</h6>
-        <Button>Quick Buy</Button>
-      </StyleCard>
-      <StyleCard>
-        <img
-          src="https://static.thcdn.com/images/large/webp//productimg/1600/1600/11207443-2214866130380732.jpg"
-          alt="pro"
-        />
-        <h6>EltaMD UV Elements Tinted Broad-Spectrum SPF 44 (2 oz.)</h6>
-        <p>Moisturizers</p>
-        <h6>$84</h6>
-        <Button>Quick Buy</Button>
-      </StyleCard>
-      <StyleCard>
-        <img
-          src="https://static.thcdn.com/images/large/webp//productimg/1600/1600/12666791-4044866391045062.jpg"
-          alt="pro"
-        />
-        <h6>EltaMD UV Elements Tinted Broad-Spectrum SPF 44 (2 oz.)</h6>
-        <p>Moisturizers</p>
-        <h6>$84</h6>
-        <Button>Quick Buy</Button>
-      </StyleCard>
-      <StyleCard>
-        <img
-          src="https://static.thcdn.com/images/large/webp//productimg/1600/1600/12459291-1584866382993395.jpg"
-          alt="pro"
-        />
-        <h6>EltaMD UV Elements Tinted Broad-Spectrum SPF 44 (2 oz.)</h6>
-        <p>Moisturizers</p>
-        <h6>$84</h6>
-        <Button>Quick Buy</Button>
-      </StyleCard>
-    </div> */}
+

@@ -43,7 +43,15 @@ const sliderImages = [
         price:"$84",
         text: "Quick Buy"
 
-    }
+    },
+    {
+        url: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11207443-2214866130380732.jpg",
+        title: "EltaMD UV Elements Tinted Broad-Spectrum SPF 44 (2 oz.)",
+        type: "Moisturizers",
+        price:"$84",
+        text: "Quick Buy"
+
+    },
 ]
 
 

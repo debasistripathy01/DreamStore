@@ -13,6 +13,9 @@ import { ShopByCategory, ShopByCategory2 } from './ShopByCategory';
 import { SmallSlider } from './firstSlider';
 
 import {Navbar} from "../NavBar/Navbar"
+import { Carousel } from 'react-bootstrap';
+import { CarouselExmp } from './CarouselExmp';
+import { Text } from '@chakra-ui/react';
 
 
 export const Homepage = () => {
@@ -30,21 +33,30 @@ export const Homepage = () => {
             </div>
 
 
-            {/* ASk The Esthetician */}
-            <div>
+            {/* ASk The Esthetician ----Change Here*/}
+            <div >
                 <h3>3x Points on Sunday Riley</h3>
                 <p>
                     Rewards members earn TRIPLE on the cult-favorite formulas for
                     radiant-looking skin.{" "}
                 </p>
-                <div className="SlidingProdSmall">
-                    <div className="ProdSmallDiv">
-                    <img
-                        src="https://static.thcdn.com/images/medium/webp/widgets/208-us/47/3x_PTS_Sunday_Riley-070147.png"
-                        alt="prod"
-                    />
+                <div>
+                    <Text fontSize='4xl' textAlign={"center"} marginTop="1%" marginBottom="1%">Trending Today</Text>
+                </div>
+                <div className='first_slider_col'>
+                    <div className="SlidingProdSmall">
+                        <div className="ProdSmallDiv">
+                            <img
+                                src="https://static.thcdn.com/images/medium/webp/widgets/208-us/47/3x_PTS_Sunday_Riley-070147.png"
+                                alt="prod"
+                            />
+                        </div>
                     </div>
-                    <SmallSlider />
+
+                    <div className='crouselExmp'>
+                        <CarouselExmp />
+                    
+                    </div>
                 </div>
             </div>
             
@@ -101,6 +113,7 @@ export const Homepage = () => {
                     <FromBlogs />
                 {/* </div> */}
             </div>
+
 
         
 

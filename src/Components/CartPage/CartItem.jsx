@@ -3,7 +3,7 @@ import { MdDeleteOutline } from "react-icons/md";
 import { useSelector, useDispatch } from "react-redux";
 import { Deletdata, getdata, PluseCartdata } from "../../Redux/cart/actionCart";
 
-export const CartItem = ({ title, qty, price, image, id }) => {
+const CartItem = ({ title, qty, price, image, id }) => {
   let dispatch = useDispatch();
 
   let handelMin = (id) => {};
@@ -59,3 +59,5 @@ export const CartItem = ({ title, qty, price, image, id }) => {
     </>
   );
 };
+
+export default React.memo(CartItem);

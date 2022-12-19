@@ -102,8 +102,10 @@ export const FromBlogs = () => {
         <Slide dots="true" infinite="true" speed="100" slidesToShow="5" autoplay="true" slidesToScroll="0.3" arrows="false" autoplaySpeed="200" cssEase="ease-in-out">
           {
             slideImages.map((items)=>{
-            return (<Box key={Math.random()}>
-              <Image width="100%" src={items.url}/>
+
+            return (<Box key={Math.random()} style={{marginRight:"3%"}}>
+              <Image width="100%" src={items.url} />
+
               <span style={{width:"80%", textAlign:"center", fontSize: "16px"}}>{items.title}</span>
             </Box>)})
           }

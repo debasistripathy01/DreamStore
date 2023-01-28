@@ -20,7 +20,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 export const BannerCarousel = () => {
   return (
-    <Carousel fade={true} pause={false} variant="white">
+    <Carousel fade={true} pause={false} variant="white" className='mainCarousel'>
       <Carousel.Item interval={3000} >
         <img
           className="d-block w-100"
@@ -31,7 +31,7 @@ export const BannerCarousel = () => {
           <h1 className="h1carosal">Upto 25% Gift</h1>
           <h1 className="h1carosal">Sets</h1>
           <div className='h1carosal-sec'>
-            <p>
+            <p >
                 Sleigh your list & save on
                 limited-edition sets, 
                 featuring the most-coveted formulas in skin,

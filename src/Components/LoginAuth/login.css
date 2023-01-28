@@ -9,6 +9,7 @@
 }
 
 
+
 .mainDiv {
     width: 30%;
     border: 1px solid black;
@@ -18,6 +19,32 @@
     margin-top: 100px;
 }
 
+@media (max-width: 1000px) {
+    .mainDiv {
+        width: 40%;
+        border: 1px solid black;
+        padding: 10px;
+
+    }
+
+    .main {
+        gap: 50px;
+        /* font-size: 10px; */
+    }
+
+}
+
+@media (max-width: 800px) {
+    .mainDiv {
+        width: 50%;
+        border: 1px solid black;
+
+    }
+
+    .main {
+        gap: 10px;
+    }
+}
 
 .main h1 {
     /* border-color: #000000; */
@@ -35,7 +62,7 @@
     color: #333333;
     font-size: 14px;
     font-weight: 700;
-    line-height: 20px;
+    /* line-height: 20px; */
     padding: 0px 0px 0px 8px
 }
 
@@ -46,10 +73,11 @@
     font-family: Lato;
     font-size: 14px;
     line-height: 20px;
-    margin-bottom: 30px;
-    margin-top: 10px;
-    /* border: none; */
+    margin-bottom: 10px;
+    margin-top: 5px;
+    border: 2px solid black;
     padding: 1px 2px;
+    height: 50px;
 }
 
 .buttoncontinue {
@@ -66,5 +94,22 @@
     line-height: 20px;
     padding: 10px 38px;
     width: 100%;
-    text-transform: uppercase
+    text-transform: uppercase;
+    height: 60px;
+    
+}
+
+@media (max-width: 500px) {
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        line-height: 0%;
+    }
+    .mainDiv {
+        width: 100%;
+        border: 1px solid black;
+        line-height: 0%;
+
+    }
 }

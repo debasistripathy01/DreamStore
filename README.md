@@ -1,15 +1,56 @@
 ## INTRODUCTION :
 
-Hello Everyone, We have build a clone of Dermstore. Currently, we are pursuing the Full Stack Web Development course at Masai School. We are in last week of unit 6 which is known by construct week . In this week we build the clone of Dermstore which is given by Masai School . Thanks to Masai School for this opportunity.
-<br>
+Hello Everyone, We have built a unique website of Dreamstore. 
 
 ![App Screenshot](https://i.postimg.cc/c42zv9Rn/dermstore.jpg)
 
 > • Deployed Link - [Dermstore] (https://debasistripathy01.github.io/plausible-porter-6646/)
 
 *System display size 💻 = 1024 to 1680 pixels*
-<br>
 
+# **Features** :-
+SignIn with Email Authentication using greenWeb
+SignUp
+Browse Products based on the section
+Search Products with brands.
+Apply Filters, Sorting according to price, features and brands
+Create, Update, Remove Products from Bag 
+Payment Integration (RazorPay)
+Tech Stack:-
+ ***React JS***
+***Javascript***
+***Redux***
+***Routers***
+***NodeJS***
+***Mongo Atlas***
+***Material UI & Styled-Components***
+
+# **Sources**:
+1. React: React
+
+2. Redux: Redux
+
+3. React-Redux: React-Redux
+
+4. Redux-thunks: Redux-thunks
+
+5. Custom UI: Custom UI
+
+6. Images: Myntra
+
+7. Fonts: Google Fonts
+
+8. Firebase: Email Authentication
+
+9. Icons: Material Icon
+
+10. Material UI: Material UI
+
+11. MockServer:HerokuServer
+
+12. Axios: Axios
+
+13. Styled Components: Styled Components
 
 # Problem Statement
 
@@ -25,43 +66,34 @@ users can also see new arrivals products and scroll through them just by clickin
 
 ## About Project: 
 
+    - 
+
 ## DermStore Link:- [DermStore](https://www.dermstore.com)
 
-DermStore is a skin care and beauty e-commerce site in the United States.
+DreamStore is a skin care and beauty e-commerce site.
 It is one of the best places to find some of the highest quality skincare, makeup, haircare, and so much more for both women and men.
-DermStore was founded by dermatologist Craig Kraffert in 1999. In 2012, the company expanded from distributing professional skin care, to consumer cosmetics brands.
-Since December 2020, it is a subsidiary of The Hut Group which is a British e-commerce company.
-
 
 ## Home Page :
 
 On the Home Page, there are many options like a search bar where users can search products by product name or Brand, then there is also an account option where users can log in or signup and beside this, cart option or admin panel is also there and by clicking on the cart option users can see the products which they have added to the cart.
 users can also see new arrivals products and scroll through them just by clicking the buttons which are present on the left and right side.
 ![App Screenshot](https://snipboard.io/KlZygN.jpg)
-![App Screenshot](https://snipboard.io/2k34SB.jpg)
-![App Screenshot](https://snipboard.io/kXgCne.jpg)
+
 
 
 ### Landing Page
 
+![App Screenshot](https://snipboard.io/2k34SB.jpg)
+![App Screenshot](https://snipboard.io/kXgCne.jpg)
+
 
 ## SignUp Page/Login:
-
+Signup and Login pages are authenticated properly 
 
 ## Login Page Auth Features:
-
-
-## Footer/NavBar part :-
-
-
-
-## Category Page  :-
-
-
-
-
+Email Authenticationa and vlaidation was done using MongoAtlas. 
 ### Cart Page :
-
+All the products available accordidng to the paths. Invidual product page opens up while clicking any product.
 
 
 ### Payment Page:-
@@ -99,7 +131,14 @@ This is the Checkout page, which is the last page of the website. The user will 
 > • Git
 
 
-# Getting Started with Create React App
+# Getting Started with Create React App and How can you open This project on Local System
+
+## Clone This Repo Link into your Terminal 
+
+### `git clone https://github.com/debasistripathy01/DreamStore`      
+
+
+### Run `npm install` (This is to install all the dependancies to the node_modules)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

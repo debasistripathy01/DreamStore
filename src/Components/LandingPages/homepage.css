@@ -108,8 +108,33 @@ justify-content: center;
 
 .first_slider_col{
   /* border: 1px solid red; */
+  width: 90%;
+  margin: auto;
   display: flex;
+  justify-content: space-between;
+  /* border: 1px solid black; */
+ 
   
+}
+.ShopByCat{
+  display: flex;
+  /* border: 1px solid; */
+  width: 90%;
+margin: auto;
+margin-top: 20px;
+}
+.BestSeller{
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.title{
+  white-space: nowrap; 
+  width: 80%; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* border: 1px solid; */
 }
 .SlidingProdSmall{
   /* border: 1px solid gold; */
@@ -173,12 +198,7 @@ justify-content: center;
     margin-top: 40px;
   }
   
-  .shop_category {
-    display: grid;
-    margin: 30px 40px;
-    gap: 20px;
-    grid-template-columns: repeat(6, 1fr);
-  }
+ 
   
   .shop_category > a img {
     width: 100%;
@@ -190,15 +210,22 @@ justify-content: center;
   }
   
   .shop_category2 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    display: flex;
+    width: 90%;
+    margin: auto;
+    gap: 10px;
+
   }
   
-  .shop_category2 > div img {
-    width: 100%;
+  .shop_category2 h4 p {
+    white-space: nowrap; 
+    width: 80%; 
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
-  
+  .shop_category2 img{
+    border: 1px solid;
+  }
   
   .SingleImmg img {
     width: 97%;
@@ -249,50 +276,18 @@ justify-content: center;
     width: 100%;
   }
   
-  @media only screen and (max-device-width: 912px) and (min-device-width: 620px) {
-    .shop_category2 {
-      display: grid;
 
-
-    }
-    .ProdSmallDiv>img {
-      display: none;
-      width: 40%;
-      height: auto;
-    }
-    .SlidingProdSmall {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      width: 400px;
-      height: auto;
-    }
-    .SlidingProdSmall {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      gap: 10px;
-      padding: 5px 10px;
-      margin: 14px 0;
-    }
-    .FeaturedBrandDiv {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 30px;
-      margin-bottom: 15px;
-    }
-    .FeaturedBrandDiv > div {
-      margin-bottom: 15px;
-    }
-    .FromTheBlogDiv {
-      grid-template-columns: repeat(1, 1fr);
-      margin: 40px;
-    }
-    .CaroselDivMain {
-      margin-top: 60px;
-    }
-    .NowTrendingDiv {
-      display: grid;
-      gap: 20px;
-      grid-template-columns: repeat(2, 1fr);
-    }
+  .fullpage h2{
+    margin-top: 40px;
+    font-size: 20px;
   }
-  
+
+  .mainCarousel p{
+    color: black;
+    background-color: white;
+    /* width: auto; */
+  }
+
+  .BestSellerMain{
+    margin-top: 20px;
+  }

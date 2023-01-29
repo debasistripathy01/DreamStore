@@ -14,68 +14,71 @@
 
 
 /* First Div of Letter Top-right Corner */ 
-.contryDiv{
-    backgroundColor: "#f2f2f2";
-    padding: "10px";
-    textAlign: "right";
+.countryDiv{
+    background-color: #f2f2f2;
+    text-align: right;
 }
 
 /*-------- Upper NavBar Stylings Here ---------*/
 
+
+
+.navbarSection{
+    /* border: 1px solid greenyellow; */
+    width: 98%;
+  position: sticky;
+  background-color: white;
+  top: 0;
+  z-index: 5;
+}
+
 .upperNavbar{
     display: flex;
-  width: 100%;
-  align-items: center;
+    width: 98%;
+    align-items: center;
 }
 
 .navbar{
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
     margin: 0 30px;
-  padding: 10px;
-}
-
-.navbarSection{
-    border: 1px solid greenyellow;
-    width: 100%;
-    position: sticky;
-    background-color: white;
-    top: 0;
-    z-index: 5;
+    padding: 0px;
 }
 .appLogo{
-    margin: 20px;
-    width: 15%;
+    margin: 18px;
+    width: 16%;
 }
 
 /* Search Bar and Search Button and Input Styles */
-.searchBar{
+.searchBar {
     display: flex;
-  position: relative;
-  justify-content: center;
-  width: 55%;
-}
+    align-items: center;
 
-.search_btn {
+    position: relative;
+    justify-content: center;
+    width: 55%;
+  }
+  .searchBar>button {
     border: 1px solid black;
     border-left: none;
     cursor: pointer;
+    height: auto;
+    width: 4%;
     border-radius: 0 5px 5px 0;
     background-color: white;
   }
   .searchBar > button:hover {
     background-color: #f2f2f2;
   }
-
   .searchBar > input {
     border: 1px solid black;
     border-right: none;
     width: 55%;
+    height: 4%;
     padding: 10px 20px;
     font-size: 15px;
     outline: none;
     border-radius: 5px 0 0 5px;
   }
-
 
   /* Search Input and Search Results DIv Styling */
 
@@ -146,8 +149,8 @@
     background-color: white;
     display: flex;
     flex-direction: column;
-    padding: 10px 15px;
-    width: 350px;
+    padding: 5px 10px;
+    width: 30%;
   }
 
   .logButtDiv {
@@ -174,7 +177,7 @@
     background-color: rgb(196, 191, 191);
   }
 
-  .onLogoutDropDown a,
+  .onLoginDropDown a,
 .onLogoutDropDown a {
   text-decoration: none;
   padding: 4px 10px;
@@ -182,13 +185,247 @@
   font-size: 20px;
   margin: 5px 0;
 }
-.OnlogoutDropdown a:hover,
-.OnloginDropdown a:hover {
+.onLogoutDropDown a:hover,
+.onLoginDropDown a:hover {
   background-color: grey;
   color: white;
 }
 
-.cartSvgDiv {
+
+
+
+  /* ---------Drop Down Starts From Here------------- */
+
+  #drop_1 {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: absolute;
+    padding: 1%;
+    /* grid-template-columns: repeat(3, auto); */
+    height: fit-content;
+    top: 33px;
+    background-color: rgba(255, 255, 255);
+    width: min-content;
+    width: 54%;
+    flex-wrap: wrap;
+    display: flex;
+    letter-spacing: 0.1px;
+    float: left;
+    color: rgb(71, 71, 71);
+    
+  }
+
+
+  
+
+  #drop_2{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: absolute;
+    padding: 1%;
+    /* grid-template-columns: repeat(3, auto); */
+    height: fit-content;
+    top: 33px;
+    background-color: rgba(255, 255, 255);
+    width: min-content;
+    width: 54%;
+    flex-wrap: wrap;
+    display: flex;
+    letter-spacing: 0.1px;
+    float: left;
+    color: rgb(71, 71, 71);
+  }
+
+  
+
+
+  #drop_4 {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+    box-shadow: #64646f33 0px 7px 29px 0px;
+    position: absolute;
+    padding: 2%;
+    height: fit-content;
+    top: 33px;
+    grid-template-columns: repeat(4, auto);
+    width: min-content;
+    width: 60%;
+    flex-wrap: wrap;
+    display: flex;
+    background-color: rgba(255, 255, 255);
+    letter-spacing: 0.1px;
+    float: left;
+    color: rgb(71, 71, 71);
+  }
+  
+
+  #drop_5 {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: absolute;
+    padding: 1%;
+    /* grid-template-columns: repeat(3, auto); */
+    height: fit-content;
+    top: 33px;
+    background-color: rgba(255, 255, 255);
+    width: min-content;
+    width: 54%;
+    flex-wrap: wrap;
+    display: flex;
+    letter-spacing: 0.1px;
+    float: left;
+    color: rgb(71, 71, 71);
+  }
+  
+  #drop_6 {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: absolute;
+    padding: 2%;
+    height: fit-content;
+    top: 33px;
+    background-color: rgba(255, 255, 255);
+    width: min-content;
+    width: 51%;
+    flex-wrap: wrap;
+    display: flex;
+    letter-spacing: 0.1px;
+    float: left;
+    color: rgb(71, 71, 71);
+  }
+
+  #drop_7 {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: absolute;
+    padding: 2%;
+    height: fit-content;
+    background-color: rgba(255, 255, 255);
+    top: 33px;
+    width: min-content;
+    width: 45%;
+    flex-wrap: wrap;
+    display: flex;
+    letter-spacing: 0.1px;
+    float: left;
+    color: rgb(71, 71, 71);
+  }
+
+  #drop_8 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: absolute;
+    padding: 2%;
+    height: fit-content;
+    top: 33px;
+    width: min-content;
+    background-color: rgba(255, 255, 255);
+    width: 34%;
+    flex-wrap: wrap;
+    display: flex;
+    letter-spacing: 0.1px;
+    float: left;
+    color: rgb(71, 71, 71);
+  }
+
+  #drop_9 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: absolute;
+    padding: 2%;
+    height: fit-content;
+    top: 33px;
+    width: min-content;
+    background-color: rgba(255, 255, 255);
+    width: 34%;
+    flex-wrap: wrap;
+    display: flex;
+    letter-spacing: 0.1px;
+    float: left;
+    color: rgb(71, 71, 71);
+  }
+
+
+  #drop_10 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: absolute;
+    padding: 2%;
+    height: fit-content;
+    top: 33px;
+    width: min-content;
+    background-color: rgba(255, 255, 255);
+    width: 34%;
+    flex-wrap: wrap;
+    display: flex;
+    letter-spacing: 0.1px;
+    float: left;
+    color: rgb(71, 71, 71);
+  }
+
+
+  #drop_11 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: absolute;
+    padding: 0.5%;
+    height: fit-content;
+    top: 10px;
+    grid-template-columns: repeat(2, auto);
+    width: min-content;
+    background-color: rgba(255, 255, 255);
+    width: 22%;
+    flex-wrap: wrap;
+    letter-spacing: 0.1px;
+    float: right;
+    color: rgb(71, 71, 71);
+  }
+
+  #drop_12 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: absolute;
+    padding: 1%;
+    height: fit-content;
+    top: 10px;
+    width: min-content;
+    background-color: rgba(255, 255, 255);
+    width: 15%;
+    flex-wrap: wrap;
+    margin: auto;
+    letter-spacing: 0.1px;
+    float: left;
+    color: rgb(71, 71, 71);
+  }
+
+
+  /*----------- Cart Functional Designs--------- */
+  .cart_option{
+    /* border: 1px solid red; */
+    width: 12%;
+  }
+  .cartSvgDiv {
     position: relative;
   }
   
@@ -203,34 +440,6 @@
     left: 5px;
   }
 
-
-
-  /* ---------Drop Down Starts From Here------------- */
-
-  #drop_1 {
-    display: flex;
-    align-items: center;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    position: absolute;
-    padding: 3%;
-    height: fit-content;
-    width: min-content;
-    width: 50%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    font-size: 15px;
-    background-color: rgba(255, 255, 255);
-    letter-spacing: 0.1px;
-    float: left;
-    color: black;
-    top: 175px;
-    top: 33px;
-  }
-
-  .cart_option{
-    border: 1px solid red;
-  }
 
 
   /* --------Lower Navbar Starts here---------------- */
@@ -343,7 +552,7 @@ height: 80%;
 .moba{
     display: none;
  } */
-/* ----------------------------------------------------------- */
+/* ------------------------------------------(Responsive Settings)----------------- */
 @media screen and (max-width: 780px) {
     .searchboxdic{
         display:none;
@@ -431,6 +640,27 @@ height: 80%;
     
 }
 
+
+@media only screen and (max-width: 912px) {
+    .navbarSection,
+    .offers,
+    .countryDiv,
+    .bottomHeader{
+      display: none;
+    }
+  
+    .navResponsiveSection {
+      display: block;
+      position: fixed;
+      top: 0;
+      z-index: 6;
+      background-color: white;
+    }
+    .AppBarRes {
+      background-color: white;
+      justify-content: space-around;
+    }
+  }
 
 
 

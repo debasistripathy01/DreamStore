@@ -1,0 +1,67 @@
+[
+	{
+		"id": 1,
+		"to": "",
+		"title": "Last Chance Sale",
+
+		"products": [
+			{ "id": 1, "title": "Skin Care Sale", "to": "" },
+			{ "id": 2, "title": "Hair Care Sale", "to": "" },
+			{ "id": 3, "title": "Makeup Sale", "to": "" },
+
+			{ "id": 4, "title": "Bath & Body Sale", "to": "" },
+			{ "id": 5, "title": "iS Clinical", "to": "" },
+			{ "id": 6, "title": "Tools & Devices Sale", "to": "" },
+			{ "id": 7, "title": "Value Sets Sale", "to": "" },
+			{ "id": 8, "title": "SPF Sale", "to": "" }
+		]
+	},
+	{
+		"id": 2,
+		"to": "",
+		"title": "Shop By % Off",
+
+		"products": [
+			{ "id": 1, "title": "Save 10%", "to": "" },
+			{ "id": 2, "title": "Save 15%", "to": "" },
+			{ "id": 3, "title": "Save 20%", "to": "" },
+
+			{ "id": 4, "title": "Save 25%", "to": "" },
+			{ "id": 5, "title": "Save 30%", "to": "" },
+			{ "id": 6, "title": "Save 40%", "to": "" },
+			{ "id": 7, "title": "Save 50%", "to": "" }
+		]
+	},
+	{
+		"id": 3,
+		"to": "",
+		"title": "Other Offers",
+
+		"products": [
+			{ "id": 1, "title": "Save with Auto-Replenishment", "to": "" },
+			{ "id": 2, "title": "SRefer a Friend, Get $15", "to": "" },
+			{ "id": 3, "title": "Value Sets", "to": "" }
+		]
+    }
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

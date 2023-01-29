@@ -29,6 +29,7 @@ import dropDownSeven from "./utils/dropDown7.json";
 import dropDownEight from "./utils/dropDown8.json";
 import dropDownNine from "./utils/dropDown9.json";
 import dropDownTen from "./utils/dropDown10.json"
+import dropDownEleven from "./utils/dropDown11.json"
 import dropdownTwelve from "./utils/dropDown12.json"
 
 export const Navbar = () => {
@@ -47,6 +48,7 @@ export const Navbar = () => {
   const [dropdown8, setDropdown8] = useState(false);
   const [dropdown9, setDropdown9] = useState(false);
   const [dropdown10, setDropdown10] = useState(false);
+  const [dropdown11, setDropdown11] = useState(false);
   const [dropdown12, setDropdown12] = useState(false);
   
   const { isAuth } = useContext(AuthContext);
@@ -125,7 +127,7 @@ const { CartCount } = useSelector((state) => state);
 
   return (
     <>
-      <div className={css.contryDiv}>
+      <div className={css.countryDiv}>
           USA
       </div>
       {/* ----------- DropDown NavBar Starts Here ----------- */}
@@ -168,12 +170,12 @@ const { CartCount } = useSelector((state) => state);
                 placeholder="Search for a Products and Brand..."
                 onChange={handleSearch}
               />
-              <button id="search_btn">
+              <button className={css.searchBtn}>
                 <svg
                   width="22"
                   height="22"
                   border="none"
-                  viewBox="0 0 24 24"
+                  viewBox="0 0 22 22"
                   stroke="black"
                   fill="white"
                 >
@@ -220,7 +222,7 @@ const { CartCount } = useSelector((state) => state);
               onMouseLeave={() => setShowLoginDrop(false)}
             >
               <Link
-                // to="/login"
+                to="/login"
                 className="link"
                 style={{
                   
@@ -255,9 +257,9 @@ const { CartCount } = useSelector((state) => state);
               {showLoginDrop ? (
                 isAuth ? (
                   <div class={css.onLoginDropDown}>
-                    <div class="logButtDiv">
+                    <div class={css.logButtDiv}>
                       <button
-                        className="loglot"
+                        className={css.loglot}
                         onClick={() => {
                           localStorage.removeItem("userToken");
                           localStorage.removeItem("Token");
@@ -335,33 +337,31 @@ const { CartCount } = useSelector((state) => state);
               </Link>
             </div>
           </div>
-          {/*----------------------------- {Lower Navbar Started} -----------------------------------*/}
+{/*----------------------------- {Lower Navbar Started} -----------------------------------*/}
 
           <div className={css.lowerNavbar}>
             <div
-              id="drop1"
+              id={css.drop1}
               onMouseEnter={() => {
                 setDropdown1(true);
               }}
               onMouseLeave={() => setDropdown1(false)}
             >
               <Link 
-              // to="/products" 
+              to="/products" 
               className="link">
                 Brands
               </Link>
               {dropdown1 && (
-                <div id="drop_1">
+                <div id={css.drop_1}>
                   {dropdownFirst.map((e) => (
                     <div key={e.id}>
                       <p
-                        style={{
-                          padding: "8px",
-                          fontWeight: "300",
-                          fontSize: "25px",
-                        }}
                       >
-                        <Link to={e.to} className="linkln">
+                        <Link 
+                        style={{padding: "3px",
+                        fontSize: "17px",}}
+                        to={e.to} className="linkln">
                           {e.title}
                         </Link>
                       </p>
@@ -372,7 +372,7 @@ const { CartCount } = useSelector((state) => state);
             </div>
 
             <div
-              id="drop2"
+              id={css.drop2}
               onMouseEnter={() => {
                 setDropdown2(true);
               }}
@@ -382,7 +382,7 @@ const { CartCount } = useSelector((state) => state);
                 Browse By
               </Link>
               {dropdown2 && (
-                <div id="drop_2">
+                <div id={css.drop_2}>
                   {dropdownSecond.map((e) => (
                     <div key={e.id}>
                       <h3
@@ -435,7 +435,7 @@ const { CartCount } = useSelector((state) => state);
                 Skin Care
               </Link>
               {dropdown4 && (
-                <div id="drop_4">
+                <div id={css.drop_4}>
                   {dropDownFour.map((e) => (
                     <div key={e.id}>
                       <h3
@@ -472,7 +472,7 @@ const { CartCount } = useSelector((state) => state);
             </div>
 
             <div
-              id="drop5"
+              id={css.drop5}
               onMouseEnter={() => {
                 setDropdown5(true);
               }}
@@ -482,7 +482,7 @@ const { CartCount } = useSelector((state) => state);
                 Makeup
               </Link>
               {dropdown5 && (
-                <div id="drop_5">
+                <div id={css.drop_5}>
                   {dropDownFive.map((e) => (
                     <div key={e.id}>
                       <h3
@@ -519,7 +519,7 @@ const { CartCount } = useSelector((state) => state);
             </div>
 
             <div
-              id="drop6"
+              id={css.drop6}
               onMouseEnter={() => {
                 setDropdown6(true);
               }}
@@ -529,7 +529,7 @@ const { CartCount } = useSelector((state) => state);
                 Hair Care
               </Link>
               {dropdown6 && (
-                <div id="drop_6">
+                <div id={css.drop_6}>
                   {dropDownSix.map((e) => (
                     <div key={e.id}>
                       <h3
@@ -566,7 +566,7 @@ const { CartCount } = useSelector((state) => state);
             </div>
 
             <div
-              id="drop7"
+              id={css.drop7}
               onMouseEnter={() => {
                 setDropdown7(true);
               }}
@@ -579,7 +579,7 @@ const { CartCount } = useSelector((state) => state);
               </Link>
 
               {dropdown7 && (
-                <div id="drop_7">
+                <div id={css.drop_7}>
                   {dropDownSeven.map((e) => (
                     <div key={e.id}>
                       <h3
@@ -616,7 +616,7 @@ const { CartCount } = useSelector((state) => state);
             </div>
 
             <div
-              id="drop8"
+              id={css.drop8}
               onMouseEnter={() => {
                 setDropdown8(true);
               }}
@@ -626,7 +626,7 @@ const { CartCount } = useSelector((state) => state);
                 Tools & Devices
               </Link>
               {dropdown8 && (
-                <div id="drop_8">
+                <div id={css.drop_8}>
                   {dropDownEight.map((e) => (
                     <div key={e.id}>
                       <h3
@@ -647,7 +647,7 @@ const { CartCount } = useSelector((state) => state);
             </div>
 
             <div
-              id="drop9"
+              id={css.drop9}
               onMouseEnter={() => {
                 setDropdown9(true);
               }}
@@ -658,7 +658,7 @@ const { CartCount } = useSelector((state) => state);
               </Link>
 
               {dropdown9 && (
-                <div id="drop_9">
+                <div id={css.drop_9}>
                   {dropDownNine.map((e) => (
                     <div key={e.id}>
                       <h3
@@ -694,7 +694,7 @@ const { CartCount } = useSelector((state) => state);
               )}
             </div>
 
-            <div id="drop10"
+            <div id={css.drop10}
               onMouseEnter={() => {
                 setDropdown10(true);
               }}
@@ -706,9 +706,9 @@ const { CartCount } = useSelector((state) => state);
                 BeautyFIX
               </Link>
               {dropdown10 && (
-                <div id="drop_10">
+                <div id={css.drop_10}>
                   {dropdown10 && (
-                <div id="drop_10">
+                <div id={css.drop_10}>
                   {dropDownTen.map((e) => (
                     <div key={e.id}>
                       <h3
@@ -731,16 +731,55 @@ const { CartCount } = useSelector((state) => state);
 
             </div>
 
-            <div id="drop11">
+            <div id={css.drop11}
+            onMouseEnter={() => {
+              setDropdown11(true);
+            }}
+            onMouseLeave={() => setDropdown11(false)}
+            >
               <Link to="/products" className="link">
                 Offers
               </Link>
 
-
+              {dropdown11 && (
+                <div id={css.drop_11}>
+                  {dropDownEleven.map((e) => (
+                    <div key={e.id}>
+                      <h3
+                        style={{
+                          padding: "8px",
+                          fontWeight: "bold",
+                          fontSize: "25px",
+                        }}
+                      >
+                        <Link to={e.to} className="linkln">
+                          {e.title}
+                        </Link>
+                      </h3>
+                      <div>
+                        {e.products.map((el) => (
+                          <div key={el.id}>
+                            <p
+                              style={{
+                                padding: "8px",
+                                // fontSize: "25px",
+                              }}
+                            >
+                              <Link to={el.to} className="linkln">
+                                {el.title}
+                              </Link>
+                            </p>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
             </div>
 
             <div
-              id="drop12"
+              id={css.drop12}
               onMouseEnter={() => {
                 setDropdown12(true);
               }}
@@ -750,7 +789,7 @@ const { CartCount } = useSelector((state) => state);
                 New
               </Link>
               {dropdown12 && (
-                <div id="drop_12">
+                <div id={css.drop_12}>
                   {dropdownTwelve.map((e) => (
                     <div key={e.id}>
                       <h3
@@ -786,7 +825,7 @@ const { CartCount } = useSelector((state) => state);
               )}
             </div>
 
-            <div id="drop13">
+            <div id={css.drop13}>
               <Link to="/products" className="link">
                 Skin 101
               </Link>
@@ -915,102 +954,18 @@ const { CartCount } = useSelector((state) => state);
           </ul>
         </div>
       </div>
-      <div className={css.bottom_heading}>
+      <div className={css.bottomHeader}>
         15% off SkinMedica + 20% off when you subscribe. Receive a Skinmedica
         Lytera 0.30 oz ($36 value) when you spend $160 or more on the brand.
       </div>
-      {/* <section className={css.navRes_Section}>
+      <section className={css.navResponsiveSection}>
         <div>
-          <ResponsiveNavBar />
+          {/* <ResponsiveNavBar /> */}
         </div>
-      </section> */}
+      </section>
     </>
   )
 };
 
 
 
-{/* <div className="navtopbodyyy"></div>
-      <div className="navbaody">
-      
-        <div className="navtopbody">
-          
-          <div className="mainlogo" >
-          <div className="opencrson" onClick={()=>setisMobail(!isMobail)}><IoReorderFourSharp/></div> <img src={weblogo} alt="" onClick={()=>navigate("/")}/>
-          </div>
-          <div className="searchboxdic">
-            <input type="text" placeholder="Search your product.."/>
-          </div>
-          <div className="useracsection847">
-           
-              <h1 className="acountbuton"><AiOutlineUser className="naviconhgf554"/><Link to="/login">Account</Link></h1>
-            
-              <h1 className="acountbuton"><FaShoppingBag className="naviconhgf554"/><Link to="/cart">Cart</Link></h1>
-              <h1 className="acountbuton2"><Link to="/login"><AiOutlineUser /></Link></h1>
-            
-            <h1 className="acountbuton2"><Link to="/cart"><FaShoppingBag /></Link></h1>
-            
-          </div>
-        </div>
-        <div className="categorydic">
-          
-            <Link to="/product">Brands</Link>
-          
-          
-            <Link to="/skincare">Holidayshop</Link>
-         
-          
-            <Link to="/main">Bathandbody</Link>
-          
-            <Link to="/product">Fragrance</Link>
-          
-            <Link to="/skincare">Tools And Devices</Link>
-          
-            <Link to="/product">Gifts</Link>
-         
-            <Link to="/makeup">Makeup</Link>
-          
-            <Link to="/makeup">Hairandcare</Link>
-          
-            <Link to="/main">New</Link>
-          
-            <Link to="/skincare">Skincare</Link>
-          
-        </div>
-        
-      </div>
-      
-      <div className="bottomadd">
-<h1><TbTruck className="naviconhgf554"/> FREE US Shiping $50+</h1>
-<h1><TbChartCircles className="naviconhgf554"/> New Customers Save 15%*</h1>
-<h1><TbDiamond className="naviconhgf554"/> Dermstore Rewards</h1>
-<h1><FiClock className="naviconhgf554"/> Ask The Esthetician</h1>
-<h1><FiSmartphone className="naviconhgf554"/> Download Our App</h1>
-<h1><FiGift className="naviconhgf554"/> Refer a Friend, Get $15</h1>
-      </div>
-      <div className={isMobail?"allcatlinks":"moba"}>
-        <div onClick={()=>setisMobail(!isMobail)}>clear.</div>
-        <div> <Link to="/product">Brands</Link></div>
-         
-          
-          
-        <div><Link to="/skincare">Holidayshop</Link></div>
-       
-        
-        <div> <Link to="/main">Bathandbody</Link></div>
-        
-        <div> <Link to="/product">Fragrance</Link></div>
-        
-        <div> <Link to="/skincare">Tools And Devices</Link></div>
-        
-        <div> <Link to="/product">Gifts</Link></div>
-       
-        <div><Link to="/makeup">Makeup</Link></div>
-        
-        <div><Link to="/makeup">Hairandcare</Link></div>
-        
-        <div><Link to="/main">New</Link></div>
-        
-        <div> <Link to="/skincare">Skincare</Link></div>
-      </div>
-    </> */}

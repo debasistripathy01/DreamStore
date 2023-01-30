@@ -9,7 +9,7 @@ import thunk from "redux-thunk";
 import { CartReducer } from "./cart/ReducerCart";
 import { reducer as productReducer } from "./ProdData/reducer";
 import { ReducerCarousel } from "./HomeRedux/Reducer"
-
+import { reducerCart } from "../Components/NavBar/Redux/reducer";
 const composeEnhancers = 
 typeof window === 'object' && 
 window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ? 
@@ -18,7 +18,7 @@ window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ?
 
 
 
-const rootReducer = combineReducers({ productReducer, CartReducer, ReducerCarousel });
+const rootReducer = combineReducers({ reducerCart, });
 
 
 

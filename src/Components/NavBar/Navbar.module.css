@@ -1,0 +1,513 @@
+/* .navbaody{
+    max-width: 100%;
+    height: 125px;
+    border-bottom: 1px solid grey;
+    
+}
+.navtopbodyyy{
+    height: 35px;
+    background-color: rgb(231, 246, 244);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+} */
+
+
+/* First Div of Letter Top-right Corner */ 
+.contryDiv{
+    backgroundColor: "#f2f2f2";
+    padding: "10px";
+    textAlign: "right";
+}
+
+/*-------- Upper NavBar Stylings Here ---------*/
+
+.upperNavbar{
+    display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.navbar{
+    border: 1px solid orange;
+    margin: 0 30px;
+  padding: 10px;
+}
+
+.navbarSection{
+    border: 1px solid greenyellow;
+    width: 100%;
+    position: sticky;
+    background-color: white;
+    top: 0;
+    z-index: 5;
+}
+.appLogo{
+    margin: 20px;
+    width: 15%;
+}
+
+/* Search Bar and Search Button and Input Styles */
+.searchBar{
+    display: flex;
+  position: relative;
+  justify-content: center;
+  width: 55%;
+}
+
+.search_btn {
+    border: 1px solid black;
+    border-left: none;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    background-color: white;
+  }
+  .searchBar > button:hover {
+    background-color: #f2f2f2;
+  }
+
+  .searchBar > input {
+    border: 1px solid black;
+    border-right: none;
+    width: 55%;
+    padding: 10px 20px;
+    font-size: 15px;
+    outline: none;
+    border-radius: 5px 0 0 5px;
+  }
+
+
+  /* Search Input and Search Results DIv Styling */
+
+  .searchResultDiv {
+    position: absolute;
+    width: 63%;
+    min-height: 280px;
+    top: 40px;
+    left: 137px;
+    z-index: 1;
+    border-radius: 0 0 10px 10px;
+    background-color: rgb(240, 248, 248);
+    padding: 0 5px;
+    overflow-y: hidden;
+    /* display: none; */
+  }
+  .searchResultDiv > div {
+    display: flex;
+    gap: 10px;
+    padding: 5px;
+    cursor: pointer;
+    border-bottom: 1px solid grey;
+    margin-bottom: 5px;
+  }
+  .searchResultDiv img {
+    width: 50px;
+  }
+  .navRes_Section {
+    display: none;
+  }
+
+/* ----------account option Start----- */
+  .accountOption{
+    width: 18%;
+  }
+
+
+  /* Links Styles */
+
+  .link{
+    display: "flex";
+    justifyContent: "center";
+    alignItems: "center";
+    width: "80px";
+    gap: "15px";
+
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+    font-weight: 500;
+    padding: 10px 15px;
+  }
+
+
+  .link:hover {
+    background: transparent;
+    text-decoration: none;
+    font-size: 14px;
+    background-color: #f2f2f2;
+    padding: 10px 15px;
+  }
+
+  /* Login DropDown And LogOut DropDown Conditional CSS */
+  .onLogoutDropDown,
+  .onLoginDropDown {
+    z-index: 1;
+    position: absolute;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 15px;
+    width: 350px;
+  }
+
+  .logButtDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  /* Button Stylings  */
+  .loglot {
+    background-color: #222;
+    padding: 5px;
+    font-size: 18px;
+    color: white;
+  }
+  .loglot:hover {
+    background-color: rgb(85, 82, 82);
+  }
+  .logreg {
+    padding: 5px;
+    font-size: 18px;
+  }
+  .logreg:hover {
+    background-color: rgb(196, 191, 191);
+  }
+
+  .onLogoutDropDown a,
+.onLogoutDropDown a {
+  text-decoration: none;
+  padding: 4px 10px;
+  color: black;
+  font-size: 20px;
+  margin: 5px 0;
+}
+.OnlogoutDropdown a:hover,
+.OnloginDropdown a:hover {
+  background-color: grey;
+  color: white;
+}
+
+.cartSvgDiv {
+    position: relative;
+  }
+  
+  .cartCountNav {
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    padding: 3px 7px;
+    font-size: 10px;
+    position: absolute;
+    top: -15px;
+    left: 5px;
+  }
+
+
+
+  /* ---------Drop Down Starts From Here------------- */
+
+  #drop_1 {
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: absolute;
+    padding: 3%;
+    height: fit-content;
+    width: min-content;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 15px;
+    background-color: rgba(255, 255, 255);
+    letter-spacing: 0.1px;
+    float: left;
+    color: black;
+    top: 175px;
+    top: 33px;
+  }
+
+  .cart_option{
+    border: 1px solid red;
+  }
+
+
+  /* --------Lower Navbar Starts here---------------- */
+
+  .lowerNavbar {
+    display: flex;
+    margin-top: 10px;
+    width: 95%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-left: 30px;
+    align-items: center;
+    position: relative;
+  }
+
+/* --------------------------------------- */
+/* .navtopbody{
+    max-width: 90%;
+   height:80px;
+   margin: auto;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+    
+}
+.navtopbody>div{
+    width: 33.33%;
+    height: 60px;
+    
+}
+.useracsection847{
+   display: flex;
+   align-items: center;
+   justify-content:flex-end;
+   gap: 25px;
+}
+.useracsection847>h1{
+    width:150px;
+}
+.searchboxdic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.searchboxdic>input{
+    width: 90%;
+    height:40px;
+    border: 1px solid grey;
+    padding-left: 25px;
+}
+
+.categorydic{
+    width: 90%;
+    height: 50px;
+    margin: auto;
+ 
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.mainlogo{
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+}
+
+.mainlogo>img{
+height: 80%;
+}
+.acountbuton{
+    
+  
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+   font-size: 16px;
+}
+.bottomadd{
+    height: 60px;
+    background-color: rgb(231, 246, 244);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.bottomadd>h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight:600;
+}
+.naviconhgf554{
+    font-size: 25px;
+    font-weight:bolder;
+}
+.opencrson{
+  display: none;
+}
+.acountbuton2{
+    display: none;
+}
+.allcatlinks{
+    display: none;
+}
+
+.moba{
+    display: none;
+ } */
+/* ----------------------------------------------------------- */
+@media screen and (max-width: 780px) {
+    .searchboxdic{
+        display:none;
+        align-items: center;
+        justify-content: center;
+    }
+    .navtopbody{
+        max-width:100%;
+       height:80px;
+       margin: auto;
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       
+        
+    }
+    .ContryDiv{
+        display: none;
+    }
+    .opencrson{
+        height: 45px;
+        width: 45px; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
+    .navtopbody>div{
+        width:50%;
+        height: 60px;
+        
+    }
+    .categorydic{
+       
+        display: none;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .bottomadd{
+       
+        display:none;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+    .acountbuton{
+        display: none;
+    }
+    .acountbuton2{
+       
+       text-align: right;
+        
+        display: block;
+      
+    }
+    .useracsection847{
+        
+        display: flex;
+        align-items: center;
+        
+        
+     }
+     .useracsection847>h1{
+        width: 20%;
+        font-size: 25px;
+     }
+     .allcatlinks{
+        display: block;
+         width: 80%;
+         height:700px;
+         position: fixed;
+         top: 0;
+         left: 0;
+         background-color: aliceblue;
+         z-index: 999;
+     }
+     .allcatlinks>div{
+        height:45px;
+        width: 100%;
+        margin: auto;
+     
+     }
+     .moba{
+        display: none;
+     }
+    
+}
+
+
+
+
+
+/* Bottom NAvbar Tag Offers STarts here */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.offers {
+    background-color: #f2f2f2;
+    /* height: 60px; */
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+  }
+  .offers li {
+    list-style: none;
+  }
+  
+  .offers_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 15px;
+    margin: auto;
+    width: 90%;
+  }
+  
+  .bottom_heading {
+    background-color: rgba(153, 153, 153, 0.616);
+    height: 50px;
+    display: flex;
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    height: 50px;
+    display: flex;
+    font-size: 15px;
+    font-weight: 600;
+    justify-content: center;
+    color: rgb(53, 50, 50);
+  }
+  
+  .bottom_heading:hover {
+    background-color: rgba(153, 153, 153, 0.437);
+    color: black;
+  }
+
+  /* Responsive Nav Bar Starts Here */
+
+  .navRes_Section {
+    display: none;
+  }
+  
+  @media only screen and (max-width: 912px) {
+    .navbarSection,
+    .offers,
+    .ContryDiv,
+    .bottom-heading {
+      display: none;
+    }
+  
+    .navRes_Section {
+      display: block;
+      position: fixed;
+      top: 0;
+      z-index: 6;
+      background-color: white;
+    }
+    .AppBarRes {
+      background-color: white;
+      justify-content: space-around;
+    }
+  }
+  
+
+
+  /* Navbar Styles Starts HEre  */

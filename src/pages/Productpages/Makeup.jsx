@@ -10,7 +10,7 @@ export const Makeup = () => {
   const [param, setparam] = useState("hair");
   const getdata = (param) => {
     return axios
-      .get(`https://frightened-boot-dove.cyclic.app/${param}`)
+      .get(`https://server-dermstore.onrender.com/${param}`)
       .then((r) => setdata(r.data))
       .catch((e) => console.log(e));
   };

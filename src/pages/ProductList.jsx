@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useLocation, useSearchParams } from 'react-router-dom';
 import { getData } from '../Redux/ProdData/action';
 import { ProductCard } from './ProductCard';
-import styled from '@emotion/styled';
+
 import './ProductList.css'
 import { FilterComp } from './FilterComp';
 import {Navbar} from "../Components/NavBar/Navbar"

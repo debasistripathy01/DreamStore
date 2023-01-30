@@ -42,11 +42,11 @@ export const Allroutes = () => {
 
       <Route path="/product" element={<ProductList />} />
 
-      <Route path="/cart" element={<Cart />} />
+      {/* <Route path="/cart" element={<Cart />} /> */}
       <Route path="/main" element={<Main />} />
       <Route path="/skincare" element={<Skincare />} />
 
-      <Route path="/cart" element={<Cart />}></Route>
+      {/* <Route path="/cart" element={<Cart />}></Route> */}
       <Route path="/chekout" element={<Checkout />}></Route>
 
       {/* <Route path='/admin' element={<Admin />}>

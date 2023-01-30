@@ -3,7 +3,7 @@ import { BsHeart } from "react-icons/bs";
 import {Center,Box,Image,Stack,Heading,Text,useColorModeValue,Flex,Button,Circle} from '@chakra-ui/react'
 import { BsStar, BsStarFill, BsStarHalf } from 'react-icons/bs';
 import ProductModal from "../Pages/ProductModal";
-import {Link} from 'react-router-dom'
+// import {Link} from 'react-router-dom'
 
 const ProductListHair=({image,title,price,rating,count,id,el})=> {
 

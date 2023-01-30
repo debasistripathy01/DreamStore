@@ -23,7 +23,7 @@ const getDataFailed = () => {
 const getData = (params) => (dispatch) => {
     dispatch(getDataRequest())
 
-    return axios.get('https://frightened-boot-dove.cyclic.app/men', params)
+    return axios.get('https://server-dermstore.onrender.com/men', params)
 
     .then((r) => {
         dispatch(getDataSuccess(r.data))

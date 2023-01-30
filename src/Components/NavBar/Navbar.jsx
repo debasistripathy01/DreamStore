@@ -94,9 +94,7 @@ const { CartCount } = useSelector((state) => state);
   };
 
   // Show product Details as per clicked on the specific product ID
-  const showProductDetails = (id) => {
-    // navigate(`/total/${id}`);
-  };
+  
 
   // Navigate to Login Page
   const handleLogin = () => {
@@ -111,18 +109,11 @@ const { CartCount } = useSelector((state) => state);
   };
 
 
-  //  CartNavBar Data updation
+
 
 
 
   const SetToReduce = () => {
-    // axios
-    //   .get(`https://dermstore-server-ayush.herokuapp.com/items/${Token}`)
-    //   .then(({ data }) => {
-    //     dispatch(fetchCartData(data));
-    //     dispatch(GetCartCount(data[0].cartItems.length));
-    //     // console.log(data);
-    //   });
   };
 
   React.useEffect(() => {

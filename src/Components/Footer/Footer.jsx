@@ -111,19 +111,19 @@ export const Footer = () => {
           <p id="list_heading">Customer Service</p>
           <ul>
             <li>
-              <a href="#">Help Center / FAQs</a>
+              <a href="#" className="footerNames">Help Center / FAQs</a>
             </li>
             <li>
-              <a href="#">Returns</a>
+              <a href="#" className="footerNames">Returns</a>
             </li>
             <li>
-              <a href="#">Shipping Information</a>
+              <a href="#" className="footerNames">Shipping Information</a>
             </li>
             <li>
-              <a href="#">Order Status</a>
+              <a href="#" className="footerNames">Order Status</a>
             </li>
             <li>
-              <a href="#">Cookie Settings</a>
+              <a href="#" className="footerNames">Cookie Settings</a>
             </li>
           </ul>
         </div>
@@ -134,19 +134,19 @@ export const Footer = () => {
 
             <ul>
               <li>
-                <a href="#">Manage My Auto-Replenishments</a>
+                <a href="#" className="footerNames">Manage My Auto-Replenishments</a>
               </li>
               <li>
-                <a href="#">My Rewards</a>
+                <a href="#" className="footerNames">My Rewards</a>
               </li>
               <li>
-                <a href="#">My Favorites</a>
+                <a href="#" className="footerNames">My Favorites</a>
               </li>
               <li>
-                <a href="#">Refer a Friend</a>
+                <a href="#" className="footerNames">Refer a Friend</a>
               </li>
               <li>
-                <a href="#">Order History</a>
+                <a href="#" className="footerNames">Order History</a>
               </li>
             </ul>
           </div>
@@ -155,13 +155,13 @@ export const Footer = () => {
             <p id="list_heading">Company</p>
             <ul>
               <li>
-                <a href="#">About Us</a>
+                <a href="#" className="footerNames">About Us</a>
               </li>
               <li>
-                <a href="#">Press</a>
+                <a href="#" className="footerNames">Press</a>
               </li>
               <li>
-                <a href="#">What is Klarna?</a>
+                <a href="#" className="footerNames">What is Klarna?</a>
               </li>
             </ul>
           </div>
@@ -170,19 +170,19 @@ export const Footer = () => {
             <p id="list_heading">Legal</p>
             <ul>
               <li>
-                <a href="#">Privacy Policy</a>
+                <a href="#" className="footerNames">Privacy Policy</a>
               </li>
               <li>
-                <a href="#">Terms & Conditions</a>
+                <a href="#" className="footerNames">Terms & Conditions</a>
               </li>
               <li>
-                <a href="#">Modern Slavery Statement</a>
+                <a href="#" className="footerNames">Modern Slavery Statement</a>
               </li>
               <li>
-                <a href="#">Product Recall</a>
+                <a href="#" className="footerNames">Product Recall</a>
               </li>
               <li>
-                <a href="#">Accessibility</a>
+                <a href="#" className="footerNames">Accessibility</a>
               </li>
             </ul>
           </div>

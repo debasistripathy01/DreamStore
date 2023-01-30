@@ -18,15 +18,15 @@ const responsiveSettings = [
     {
         breakpoint: 400,
         settings: {
-            slidesToShow: 3,
+            slidesToShow: 1,
             slidesToScroll: 3
         }
     },
     {
         breakpoint: 300,
         settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
+            slidesToShow: 1,
+            slidesToScroll: 1
         }
     },
     {
@@ -173,7 +173,7 @@ export const CarouselExmp = () => {
     return (
         <div >
             
-            <Slide slidesToScroll={2} slidesToShow={3} indicators={true} responsive={responsiveSettings} style={{objectFit:"fill",gap:"0px"}}>
+            <Slide slidesToScroll={2} slidesToShow={1} indicators={true} responsive={responsiveSettings} style={{objectFit:"fill",gap:"0px"}}>
                 {
                     sliderImages.map((item)=>(
                         // <Box key={Math.random()}  

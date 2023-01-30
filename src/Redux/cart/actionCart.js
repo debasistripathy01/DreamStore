@@ -40,6 +40,7 @@ export const getdata = () => (dispatch) => {
     .get("https://server-dermstore.onrender.com/cartproduct")
     .then((res) => {
       dispatch(getCartDataSuccess(res.data));
+      // console.log(res.data)
     })
     .catch((e) => {
       dispatch(getCartDataError());

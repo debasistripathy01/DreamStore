@@ -344,7 +344,7 @@ const { CartCount } = useSelector((state) => state);
               onMouseLeave={() => setDropdown1(false)}
             >
               <Link 
-              to="/products" 
+              to="/product" 
               className="link">
                 Brands
               </Link>
@@ -374,7 +374,7 @@ const { CartCount } = useSelector((state) => state);
               }}
               onMouseLeave={() => setDropdown2(false)}
             >
-              <Link to="/products" className="link">
+              <Link to="/product" className="link">
                 Browse By
               </Link>
               {dropdown2 && (
@@ -415,7 +415,7 @@ const { CartCount } = useSelector((state) => state);
             </div>
 
             <div id="drop3">
-              <Link to="/products" className="link">
+              <Link to="/product" className="link">
                 Bestsellers
               </Link>
             </div>
@@ -427,7 +427,7 @@ const { CartCount } = useSelector((state) => state);
               }}
               onMouseLeave={() => setDropdown4(false)}
             >
-              <Link to="/products" className="link">
+              <Link to="/product" className="link">
                 Skin Care
               </Link>
               {dropdown4 && (
@@ -474,7 +474,7 @@ const { CartCount } = useSelector((state) => state);
               }}
               onMouseLeave={() => setDropdown5(false)}
             >
-              <Link to="/products" className="link">
+              <Link to="/product" className="link">
                 Makeup
               </Link>
               {dropdown5 && (
@@ -521,7 +521,7 @@ const { CartCount } = useSelector((state) => state);
               }}
               onMouseLeave={() => setDropdown6(false)}
             >
-              <Link to="/products" className="link">
+              <Link to="/product" className="link">
                 Hair Care
               </Link>
               {dropdown6 && (
@@ -569,7 +569,7 @@ const { CartCount } = useSelector((state) => state);
               onMouseLeave={() => setDropdown7(false)}
             >
               <Link 
-              to="/products" 
+              to="/product" 
               className="link">
                 Bath & Body
               </Link>
@@ -618,7 +618,7 @@ const { CartCount } = useSelector((state) => state);
               }}
               onMouseLeave={() => setDropdown8(false)}
             >
-              <Link to="/products" className="link">
+              <Link to="/product" className="link">
                 Tools & Devices
               </Link>
               {dropdown8 && (
@@ -649,7 +649,7 @@ const { CartCount } = useSelector((state) => state);
               }}
               onMouseLeave={() => setDropdown9(false)}
             >
-              <Link to="/products" className="link">
+              <Link to="/product" className="link">
                 Gifts & Sets
               </Link>
 
@@ -733,7 +733,7 @@ const { CartCount } = useSelector((state) => state);
             }}
             onMouseLeave={() => setDropdown11(false)}
             >
-              <Link to="/products" className="link">
+              <Link to="/product" className="link">
                 Offers
               </Link>
 
@@ -781,7 +781,7 @@ const { CartCount } = useSelector((state) => state);
               }}
               onMouseLeave={() => setDropdown12(false)}
             >
-              <Link to="/products" className="link">
+              <Link to="/product" className="link">
                 New
               </Link>
               {dropdown12 && (
@@ -822,7 +822,7 @@ const { CartCount } = useSelector((state) => state);
             </div>
 
             <div id={css.drop13}>
-              <Link to="/products" className="link">
+              <Link to="/product" className="link">
                 Skin 101
               </Link>
             </div>

@@ -4,7 +4,7 @@ import "./login.css"
 import {
   // Heading,
   Text,
-  Button, Box, Image
+  Button, Box, Image, useToast
 } from '@chakra-ui/react'
 import { Link } from "react-router-dom"
 import {useDispatch} from "react-redux"
@@ -18,13 +18,39 @@ const Login = ()=>{
     const [password, setPassword] = useState("")
     const dispatch = useDispatch()
     const navigate = useNavigate()
+    const toast = useToast()
+    let email1 = localStorage.getItem("email")
+    let pass1 = localStorage.getItem("pass")
+          // console.log(email1)
     const handleSubmit = (e)=>{
         e.preventDefault()
+
+
+        
         if(email==="admin"&&password==="admin"){
           navigate("/admin")
         }
+        else if(email!==email1 || password !== pass1){
+          toast({
+            title: "Worng Credentials",
+            description: "Credentials Doesn't match",
+            status: "error",
+            position: "top",
+            duration: 2000,
+            isClosable: true,
+          });
+        }
         else if(email&&password){
+          toast({
+            title: "Welcome Back",
+            description: "Successfully Logged In",
+            status: "success",
+            position: "top",
+            duration: 3000,
+            isClosable: true,
+          });
             dispatch(login({email,password})).then((r)=>{
+
                 navigate("/")
             })
         }

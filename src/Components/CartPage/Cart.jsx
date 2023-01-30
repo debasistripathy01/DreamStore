@@ -6,15 +6,24 @@ import CartItem from "./CartItem";
 import "./cart.css";
 import { Navbar } from "../NavBar/Navbar";
 import { Footer } from "../Footer/Footer";
-import { GetCart } from "./GetCart";
 
 export const Cart = () => {
   let dispatch = useDispatch();
   let navigate = useNavigate();
-  let data = useSelector((store) => store.CartReducer.cartData);
+  let data = useSelector((store) => store.reducerCart.CartData);
   // let isLoading = useSelector((store) => store.CartReducer.isLoading);
-  
 
+  useEffect(()=>{
+    console.log(data)
+    dispatch(getdata())
+  },[data])
+
+const backtoHome = ()=>{
+  navigate("/")
+}
+const checkout = ()=>{
+  navigate("/checkout")
+}
   return (
     <>
       <Navbar />
@@ -24,7 +33,7 @@ export const Cart = () => {
         {data.length === 0 && (
           <div className="emptyCart">
             <h1>There are currently no items in your cart.</h1>
-            <button className="continueShopping" >
+            <button className="continueShopping" onClick={backtoHome}>
               CONTINUE SHOPPING
             </button>
           </div>
@@ -40,8 +49,8 @@ export const Cart = () => {
             <div>
               {data.length > 0 && (
                 <div className="main2">
-                  {/* <GetCart/> */}
-                  {/* <div className="item">
+                  {/* <GetCart/>  */}
+                <div className="item">
                     <div
                       style={{
                         textAlign: "start",
@@ -77,8 +86,8 @@ export const Cart = () => {
                       }}
                     >
                       Subtotal
-                    </div> */}
-                  {/* </div> */}
+                    </div> 
+                   </div>
 
                   <hr className="line"></hr>
                   {data.map((ele) => {
@@ -124,66 +133,20 @@ export const Cart = () => {
             )}
 
             {/*🙋 Apply Coupon Code 👇 */}
-            <div className="CoupenCodeMain">
-              <input
-                className="CoupenCodeInput"
-                placeholder="Got a coupon code? Enter it here:"
-                
-                style={{
-                  height: "50px",
-                }}
-                
-              ></input>
-              <button className="CoupenCodeBtn" >
-                ADD
-              </button>
-            </div>
+            
           </div>
         )}
 
-        {/*🙋 Santa annimation 👇 */}
-
-        <div
-          className="gliters"
-          style={{
-            marginTop: "150px",
-            width: "750px",
-            height: "450px",
-            textAlign: "center",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            flexDirection: "column",
-          }}
-        >
-          <div>
-            <img
-              src="https://media.tenor.com/D_gQuXRVQ2wAAAAC/sports-sportsmanias.gif"
-              width={"250px"}
-              height="250px"
-              alt="erroe"
-            />
-          </div>
-
-          {/* <img src="https://media.tenor.com/YErtpshgj7UAAAAi/santa-dance-santa-floss.gif" width={"100%"} alt="erroe" /> */}
-
-          {/* <img src="https://media.tenor.com/7WSqWwpUnJMAAAAi/santa-sleigh.gif" width={"100%"} alt="erroe" /> */}
-          <h1
-            style={{
-              fontWeight: 800,
-              fontSize: "25px",
-              backgroundColor: "rgb(212,65,73)",
-              color: "white",
-            }}
-          >
-            Apply coupon Santa for 10% Discount
-          </h1>
-        </div>
+        
       </div>
       <div className="emptyCart">
-        <button className="continueShopping" >
+        {
+          data.length > 0  && <button className="continueShopping" onClick={checkout}>
           Checkout
         </button>
+        }
+        
+        
       </div>
       <Footer />
     </>

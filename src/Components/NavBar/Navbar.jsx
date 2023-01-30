@@ -29,7 +29,9 @@ import dropDownSeven from "./utils/dropDown7.json";
 import dropDownEight from "./utils/dropDown8.json";
 import dropDownNine from "./utils/dropDown9.json";
 import dropDownTen from "./utils/dropDown10.json"
+
 import dropDownEleven from "./utils/dropDown11.json"
+
 import dropdownTwelve from "./utils/dropDown12.json"
 
 export const Navbar = () => {
@@ -48,7 +50,9 @@ export const Navbar = () => {
   const [dropdown8, setDropdown8] = useState(false);
   const [dropdown9, setDropdown9] = useState(false);
   const [dropdown10, setDropdown10] = useState(false);
+
   const [dropdown11, setDropdown11] = useState(false);
+
   const [dropdown12, setDropdown12] = useState(false);
   
   const { isAuth } = useContext(AuthContext);
@@ -127,6 +131,7 @@ const { CartCount } = useSelector((state) => state);
 
   return (
     <>
+
       <div className={css.countryDiv}>
           USA
       </div>

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const ShopByCategory = () => {
   return (
-     <>
+     <div className="ShopByCat">
       <Link to="/products">
         <img
           src="https://static.thcdn.com/images/small/webp/widgets/208-us/20/DS_Round_Nav_-_Untitled_Page_%287%29-052520.png"
@@ -41,13 +41,13 @@ export const ShopByCategory = () => {
           alt="prod"
         />
       </Link>
-    </>
+    </div>
   );
 };
 
 export const ShopByCategory2 = () => {
   return (
-    <>
+    <div className="shop_category2">
       <div>
         <img
           src="https://static.thcdn.com/images/small/webp/widgets/208-us/54/0826-STDCRE-40745-DS-EF-Sept-Batch-SHOT34-HP_LPSQ_BANNER_676x556-044054.jpg"
@@ -80,6 +80,6 @@ export const ShopByCategory2 = () => {
           well-rested glow.
         </p>
       </div>
-    </>
+    </div>
   );
 };

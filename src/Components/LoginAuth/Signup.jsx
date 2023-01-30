@@ -51,7 +51,7 @@ function Signup() {
                     <hr />
                     
                     <Text>Or create an email account</Text>
-                    <div >
+                    <div className="input">
                         <form>
                             <div>
                                 <label>* Full Name</label>
@@ -89,7 +89,7 @@ function Signup() {
                                 <label>Include me in the Dermstore Rewards program Read our terms of use.</label>
                             </div>
                             <div>
-                                <button onClick={handleSubmit}>CONTINUE</button>
+                                <button className="button" onClick={handleSubmit}>CONTINUE</button>
                             </div>
                         </form>
                     </div>

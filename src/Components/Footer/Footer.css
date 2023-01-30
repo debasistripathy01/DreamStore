@@ -1,3 +1,4 @@
+
 #main {
   margin-top: 10%;
   display: flex;
@@ -26,11 +27,13 @@
   margin-left: 15px;
   /* margin-left: 180px; */
   /* padding-left:x; */
+
 }
 .FooterSection {
   display: flex;
   flex-direction: row;
 }
+
 
 
 
@@ -83,6 +86,7 @@ ul > li {
 .connect_us {
   margin-bottom: 5%;
   text-align: left;
+
 }
 
 .child > ul > li > a:hover {
@@ -110,20 +114,24 @@ ul > li {
   /* border: 1px solid  red; */
   display: flex;
 }
+
 #img1 {
   width: 64px;
   height: 42px;
 }
+
 #pay_secure_div {
   width: 55%;
   margin-left: 30px;
 }
+
 #THG_div {
   width: 45%;
 }
 #THG_div > p {
   margin-left: 5%;
 }
+
 #thg {
   font-size: 30px;
   font-weight: bold;

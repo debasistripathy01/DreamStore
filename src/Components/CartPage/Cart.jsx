@@ -6,65 +6,14 @@ import CartItem from "./CartItem";
 import "./cart.css";
 import { Navbar } from "../NavBar/Navbar";
 import { Footer } from "../Footer/Footer";
+import { GetCart } from "./GetCart";
 
 export const Cart = () => {
   let dispatch = useDispatch();
   let navigate = useNavigate();
   let data = useSelector((store) => store.CartReducer.cartData);
-  let isLoading = useSelector((store) => store.CartReducer.isLoading);
-  const flag = useRef(false);
-  const [value, setValue] = useState("");
-
-  const [subtotal, setSubtotal] = useState(0);
-  let total = 0;
-  let AppylCouponCode = () => {
-    if (flag.current == true) {
-      alert("coupon already apply");
-      return;
-    }
-    if (value === "Santa") {
-      flag.current = true;
-      let min = (total * 10) / 100;
-      total = total - min;
-      setSubtotal(total);
-    } else {
-      alert("invalid Coupon");
-    }
-  };
-  data.forEach((ele) => {
-    if (ele.qty) {
-      total += ele.price * ele.qty;
-    }
-  });
-  let continueShopping = () => {
-    navigate("/");
-  };
-  let GotoCart = () => {
-    navigate("/chekout");
-  };
-  useEffect(() => {
-    dispatch(getdata());
-  }, []);
-
-  if (isLoading) {
-    return (
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          fontSize: "50px",
-          height: "100vh",
-        }}
-      >
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Loading_2.gif?20170503175831"
-          alt="error"
-        />
-        Loading Please Wait
-      </div>
-    );
-  }
+  // let isLoading = useSelector((store) => store.CartReducer.isLoading);
+  
 
   return (
     <>
@@ -75,7 +24,7 @@ export const Cart = () => {
         {data.length === 0 && (
           <div className="emptyCart">
             <h1>There are currently no items in your cart.</h1>
-            <button className="continueShopping" onClick={continueShopping}>
+            <button className="continueShopping" >
               CONTINUE SHOPPING
             </button>
           </div>
@@ -91,7 +40,8 @@ export const Cart = () => {
             <div>
               {data.length > 0 && (
                 <div className="main2">
-                  <div className="item">
+                  {/* <GetCart/> */}
+                  {/* <div className="item">
                     <div
                       style={{
                         textAlign: "start",
@@ -127,8 +77,8 @@ export const Cart = () => {
                       }}
                     >
                       Subtotal
-                    </div>
-                  </div>
+                    </div> */}
+                  {/* </div> */}
 
                   <hr className="line"></hr>
                   {data.map((ele) => {
@@ -166,7 +116,7 @@ export const Cart = () => {
                     Cart Subtotal:
                   </div>
                   <div style={{ fontWeight: 900 }}>
-                    {subtotal !== 0 ? subtotal : total.toFixed(2)} ₹
+                     ₹
                   </div>
                 </div>
                 <hr className="line"></hr>
@@ -178,15 +128,13 @@ export const Cart = () => {
               <input
                 className="CoupenCodeInput"
                 placeholder="Got a coupon code? Enter it here:"
-                value={value}
+                
                 style={{
                   height: "50px",
                 }}
-                onChange={(e) => {
-                  setValue(e.target.value);
-                }}
+                
               ></input>
-              <button className="CoupenCodeBtn" onClick={AppylCouponCode}>
+              <button className="CoupenCodeBtn" >
                 ADD
               </button>
             </div>
@@ -233,7 +181,7 @@ export const Cart = () => {
         </div>
       </div>
       <div className="emptyCart">
-        <button className="continueShopping" onClick={GotoCart}>
+        <button className="continueShopping" >
           Checkout
         </button>
       </div>

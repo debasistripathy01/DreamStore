@@ -14,14 +14,13 @@
 
 
 /* First Div of Letter Top-right Corner */ 
+
 .countryDiv{
     background-color: #f2f2f2;
     text-align: right;
 }
 
 /*-------- Upper NavBar Stylings Here ---------*/
-
-
 
 .navbarSection{
     /* border: 1px solid greenyellow; */
@@ -63,22 +62,25 @@
     cursor: pointer;
     height: auto;
     width: 4%;
+
     border-radius: 0 5px 5px 0;
     background-color: white;
   }
   .searchBar > button:hover {
     background-color: #f2f2f2;
   }
+
   .searchBar > input {
     border: 1px solid black;
     border-right: none;
     width: 55%;
-    height: 4%;
+
     padding: 10px 20px;
     font-size: 15px;
     outline: none;
     border-radius: 5px 0 0 5px;
   }
+
 
   /* Search Input and Search Results DIv Styling */
 
@@ -178,6 +180,7 @@
   }
 
   .onLoginDropDown a,
+
 .onLogoutDropDown a {
   text-decoration: none;
   padding: 4px 10px;
@@ -187,9 +190,11 @@
 }
 .onLogoutDropDown a:hover,
 .onLoginDropDown a:hover {
+
   background-color: grey;
   color: white;
 }
+
 
 
 
@@ -439,6 +444,7 @@
     top: -15px;
     left: 5px;
   }
+
 
 
 

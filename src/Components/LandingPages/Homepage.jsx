@@ -22,7 +22,7 @@ import { Text } from '@chakra-ui/react';
 
 export const Homepage = () => {
   return (
-    <>
+    <div className='fullpage'>
     <Navbar/>
         {/*------------ Navbar (Day-1 Step-1 Harshal)  ---------------*/}
       {/* <Navbar /> */}
@@ -36,7 +36,7 @@ export const Homepage = () => {
 
 
             {/* ASk The Esthetician ----Change Here*/}
-            <div >
+            <div>
                 <h3>3x Points on Sunday Riley</h3>
                 <p>
                     Rewards members earn TRIPLE on the cult-favorite formulas for
@@ -46,14 +46,14 @@ export const Homepage = () => {
                     <Text fontSize='4xl' textAlign={"center"} marginTop="1%" marginBottom="1%">Trending Today</Text>
                 </div>
                 <div className='first_slider_col'>
-                    <div className="SlidingProdSmall">
+                    {/* <div className="SlidingProdSmall"> */}
                         <div className="ProdSmallDiv">
                             <img
                                 src="https://static.thcdn.com/images/medium/webp/widgets/208-us/47/3x_PTS_Sunday_Riley-070147.png"
                                 alt="prod"
                             />
                         </div>
-                    </div>
+                    {/* </div> */}
 
                     <div className='crouselExmp'>
                         <CarouselExmp />
@@ -66,7 +66,7 @@ export const Homepage = () => {
             
             {/* {SHop By Category } */}
             <div>
-                <h3>Shop By Category</h3>
+                <h2>Shop By Category</h2>
                 <div className="shop_category">
                     <ShopByCategory />
                 </div>
@@ -74,11 +74,14 @@ export const Homepage = () => {
             </div>
                     {/* --------Carousel Second One For Products Below Banner page------ */}
 
-            <div>
+            <div >
                 <h2>Best Sellers</h2>
+                <div className='BestSeller'>
+
                 <ProductsBestSeller />
+                </div>
             </div>
-            <div className="shop_category2">
+            <div >
                 <ShopByCategory2 />
             </div>
             <div className="SingleImmg">
@@ -96,21 +99,21 @@ export const Homepage = () => {
                 <ProductsBestSeller />
             </>
             <div>
-                <h3>Now Trending</h3>
+                <h2>Now Trending</h2>
                 <div className="NowTrendingDiv">
                     <NowTrending />
                 </div>
             </div>
             {/*------------ FeaturedBrand----------- */}
             <div>
-                <h3>Featured Brands</h3>
+                <h2>Featured Brands</h2>
                 <div className="FeaturedBrandDiv">
                     <FeaturedBrand />
                 </div>
             </div>
              {/* -----------------{From The Blog } -------------------*/}
             <div>
-                <h3> From The Blog</h3>
+                <h2> From The Blog</h2>
                 {/* <div className="FromTheBlogDiv"> */}
                     <FromBlogs />
                 {/* </div> */}
@@ -121,6 +124,6 @@ export const Homepage = () => {
 
         </section>
         <Footer />
-    </>
+    </div>
   )
 }

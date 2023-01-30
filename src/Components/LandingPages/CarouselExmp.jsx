@@ -173,7 +173,7 @@ export const CarouselExmp = () => {
     return (
         <div >
             
-            <Slide slidesToScroll={2} slidesToShow={3} indicators={true} responsive={responsiveSettings} style={{objectFit:"fill"}}>
+            <Slide slidesToScroll={2} slidesToShow={3} indicators={true} responsive={responsiveSettings} style={{objectFit:"fill",gap:"0px"}}>
                 {
                     sliderImages.map((item)=>(
                         // <Box key={Math.random()}  
@@ -184,9 +184,10 @@ export const CarouselExmp = () => {
                         // alignItems="center" borderRadius="10px" 
                         // fontSize="17px" textAlign="left" >
                         <StyleCard key={Math.random()} style={{marginRight:"1%"}}>
+                            
                             <Image width='90%' height="40%"
                             borderRadius="10px" src={item.url}/>
-                            <h6 style={{ }}>{item.title}</h6>
+                            <h6 className='title'>{item.title}</h6>
                             <p style={{ border: "1px solid grey", padding:"5px 12px",cursor:"default",
                             }}>{item.type}</p>
                             <h6 >{item.price}</h6>

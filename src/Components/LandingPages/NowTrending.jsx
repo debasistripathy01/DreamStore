@@ -4,6 +4,7 @@ import 'react-slideshow-image/dist/styles.css';
 import { Box, Image,Text } from '@chakra-ui/react';
 import { padding } from '@mui/system';
 import styled from "styled-components";
+import "./pages.css"
 
 
 
@@ -163,7 +164,7 @@ const StyleCard = styled.div`
 
 export const NowTrending = () => {
   return (
-    <div >
+    <div  className='trendingpage'>
             
             <Slide slidesToScroll={5} slidesToShow={5} indicators={true} responsive={responsiveSettings} style={{objectFit:"fill"}}>
                 {

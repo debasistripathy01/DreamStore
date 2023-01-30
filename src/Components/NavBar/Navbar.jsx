@@ -8,7 +8,7 @@ import { Link ,useNavigate} from "react-router-dom";
 // import { TbChartCircles,TbTruck ,TbDiamond} from "react-icons/tb";
 // import { FiClock,FiSmartphone,FiGift} from "react-icons/fi";
 // import {IoReorderFourSharp} from "react-icons/io5"
-import { ResponsiveNav, ResponsiveNavBar } from "./ResponsiveNav";
+// import { ResponsiveNav, ResponsiveNavBar } from "./ResponsiveNav";
 import {AuthContext, AuthContextProvider} from "../AuthContext/authContext";
 import axios from "axios";
 import { useDispatch } from "react-redux";

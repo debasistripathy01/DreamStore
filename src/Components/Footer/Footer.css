@@ -33,7 +33,13 @@
   display: flex;
   flex-direction: row;
 }
-
+#list_heading{
+  width: 100%;
+  height: auto;
+  padding: 0%;
+  margin: 0%;
+  border: 1px solid black;
+}
 
 
 
@@ -103,11 +109,11 @@ ul > li {
 #list_heading {
   text-decoration: double;
   color: black;
-  font-size: 14px;
+  font-size: 10px;
   font-family: serif;
   /* margin-left: -1%; */
-  padding-left: 40px;
-  margin-bottom: 2%;
+  /* padding-left: 40px; */
+  /* margin-bottom: 2%; */
   text-align: left;
 }
 #bottom_section {
@@ -116,9 +122,11 @@ ul > li {
 }
 
 #img1 {
-  width: 64px;
-  height: 42px;
+  width: 10%;
+  /* height: 42px; */
 }
+
+
 
 #pay_secure_div {
   width: 55%;
@@ -161,4 +169,54 @@ div > img {
 h2 {
   font-size: 15px;
 }
+@media (max-width: 800px) {
+  #list_right p{
+    font-size: 10px;
+  }
+  
+      #list_heading{
+        width: 100%;
+        height: auto;
+        padding: 0%;
+        margin: 0%;
+        border: 1px solid black;
+  }
+
+  #list_heading a{
+       width: 100%;
+        height: auto;
+        padding: 0%;
+        margin: 0%;
+        border: 1px solid black;
+  }
+}
 /* hhhjhhj */
+@media (max-width: 500px) {
+  #list_right p{
+    font-size: 10px;
+  }
+  .FooterSection p,a{
+    font-size: 5px;
+    /* background-color: rebeccapurple; */
+    color: blue;
+  }
+      #list_heading{
+        width: 100%;
+        height: auto;
+        padding: 0%;
+        margin: 0%;
+        border: 1px solid black;
+  }
+
+  #list_heading > ul >li > a{
+       width: 100%;
+        height: auto;
+        padding: 0%;
+        margin: 0%;
+        border: 1px solid black;
+  }
+  .footerNames a {
+    font-size: 1px;
+    /* border: 1px solid black; */
+  }
+}

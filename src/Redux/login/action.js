@@ -13,9 +13,11 @@ const login = (payload) => (dispatch)=>{
 }
 
 const signup = (payload) => (dispatch)=>{
-    dispatch({type : types.USER_SIGNUP_REQUEST})
+    // dispatch({type : types.USER_SIGNUP_REQUEST})
+    console.log(payload)
     return axios.post("https://reqres.in/api/register",payload)
     .then((r)=>{
+        console.log(r,"hfgvhg")
         dispatch({type : types.USER_SIGNUP_SUCCESS})
     })
     .catch((e)=>{

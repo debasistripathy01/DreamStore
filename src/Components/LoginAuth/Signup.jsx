@@ -2,7 +2,7 @@ import "./signup.css"
 import {
     Heading,
     Text,
-    Button, Box, Image
+    Button, Box, Image, useToast
 } from '@chakra-ui/react'
 import { NavbarLoginSingup } from "./NavbarLoginSingup"
 import { useState } from "react"
@@ -15,15 +15,52 @@ import { signup } from "../../Redux/login/action"
 function Signup() {
     
     const [email, setEmail] = useState("")
+    const [name, setName] = useState("")
     const [password, setPassword] = useState("")
+    const [confirmEmail, serconfirmEmail] = useState("")
+    const [confirmPass, setConfirmPassword] = useState("")
     const dispatch = useDispatch()
     const navigate = useNavigate()
+
+    const toast = useToast()
     
 
     const handleSubmit = (e)=>{
         e.preventDefault()
-        if(email&&password){
+        if(password!==confirmPass || email!==confirmEmail){
+            toast({
+                title: "Worng Credentials",
+                description: "Credentials Doesn't match",
+                status: "error",
+                position: "top",
+                duration: 2000,
+                isClosable: true,
+              });
+        }
+        else if(password.length < 5){
+            toast({
+                title: "Enter a secure Password",
+                description: "Password to Short",
+                status: "error",
+                position: "top",
+                duration: 2000,
+                isClosable: true,
+              });
+        }
+        else if(email&&password){
+            toast({
+                title: "Welcome ",
+                description: "Successfully Signup ",
+                status: "success",
+                position: "top",
+                duration: 1000,
+                isClosable: true,
+              });
             dispatch(signup({email,password})).then((r)=>{
+
+                localStorage.setItem("email",email)
+                localStorage.setItem("pass",password)
+                localStorage.setItem("name",name)
 
                 navigate("/login")
 
@@ -55,7 +92,7 @@ function Signup() {
                         <form>
                             <div>
                                 <label>* Full Name</label>
-                                <input type='text'/>
+                                <input type='text' value={name} onChange={(e)=>setName(e.target.value)}/>
                             </div>
                             <div>
                                 <label>* Email address</label>
@@ -63,7 +100,7 @@ function Signup() {
                             </div>
                             <div>
                                 <label>* Confirm Email address</label>
-                                <input type='email' />
+                                <input type='email' value={confirmEmail} onChange={(e)=>serconfirmEmail(e.target.value)}  />
                             </div>
                             <div>
                                 <label>* Password</label>
@@ -71,7 +108,7 @@ function Signup() {
                             </div>
                             <div>
                                 <label>* Confirm Password</label>
-                                <input type='password' />
+                                <input type='password' value={confirmPass} onChange={(e)=>setConfirmPassword(e.target.value)} />
                             </div>
                             <div>
                                 <label>Cell Phone Number (Optional)</label>

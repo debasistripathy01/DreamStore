@@ -10,21 +10,21 @@ import { CartReducer } from "./cart/ReducerCart";
 import { reducer as productReducer } from "./ProdData/reducer";
 import { ReducerCarousel } from "./HomeRedux/Reducer"
 import { reducerCart } from "../Components/NavBar/Redux/reducer";
-const composeEnhancers = 
-typeof window === 'object' && 
-window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ? 
-  window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({
-  }) : compose;
+const composeEnhancers =
+  typeof window === 'object' &&
+    window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ?
+    window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({
+    }) : compose;
 
 
 
-const rootReducer = combineReducers({ reducerCart, });
+const rootReducer = combineReducers({ reducerCart, productReducer});
 
+// console.log(rootReducer)
 
+const store = legacy_createStore(rootReducer, composeEnhancers(applyMiddleware(thunk)));
 
-const store = legacy_createStore(rootReducer,composeEnhancers(applyMiddleware(thunk)));
- 
-export {store}
+export { store }
 
 
 

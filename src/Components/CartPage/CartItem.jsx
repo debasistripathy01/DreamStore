@@ -1,23 +1,28 @@
+import axios from "axios";
 import React from "react";
+import { useEffect } from "react";
+import { useState } from "react";
 import { MdDeleteOutline } from "react-icons/md";
 import { useSelector, useDispatch } from "react-redux";
 import { Deletdata, getdata, PluseCartdata } from "../../Redux/cart/actionCart";
 
-const CartItem = ({ title, qty, price, image, id }) => {
+const CartItem = ({ title, price, image, id ,deletecart}) => {
   let dispatch = useDispatch();
+const [qty,setQty] = useState(1)
+  // let handelMin = (id) => {};
+  let fixqty = localStorage.setItem("qty", qty)
 
-  let handelMin = (id) => {};
+  // let handelPlus = (id, qty, opr) => {
+  //   dispatch(PluseCartdata(id, qty, opr)).then((res) => {
+  //     dispatch(getdata());
+  //   });
+  // };
+ let ans =  localStorage.getItem("qty")
 
-  let handelPlus = (id, qty, opr) => {
-    dispatch(PluseCartdata(id, qty, opr)).then((res) => {
-      dispatch(getdata());
-    });
-  };
-  let handelDelet = (id) => {
-    dispatch(Deletdata(id)).then((res) => {
-      dispatch(getdata());
-    });
-  };
+  useEffect(()=>{
+
+  },[price,qty])
+  
 
   return (
     <>
@@ -36,14 +41,15 @@ const CartItem = ({ title, qty, price, image, id }) => {
           <div className="qty">
             <button
               className="plus_min"
-              onClick={() => handelPlus(id, Number(qty), "-")}
+              disabled={qty==1}
+              onClick={() => setQty(prev => prev - 1)}
             >
               -
             </button>
-            <p> {qty} </p>
+            <p> {ans} </p>
             <button
               className="plus_min"
-              onClick={() => handelPlus(id, Number(qty), "+")}
+              onClick={() => setQty(prev => prev + 1)}
             >
               +
             </button>
@@ -51,7 +57,7 @@ const CartItem = ({ title, qty, price, image, id }) => {
         </div>
 
         <div className="subTotal"> {price * qty} </div>
-        <div className="del" onClick={() => handelDelet(id)}>
+        <div className="del" onClick={() => deletecart(id)}>
           <MdDeleteOutline />
         </div>
       </div>

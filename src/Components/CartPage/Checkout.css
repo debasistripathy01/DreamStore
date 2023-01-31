@@ -1,7 +1,7 @@
 .checkoutmain {
   background-color: rgb(242, 242, 242);
   text-align: start;
-  width: 40%;
+  width: 80%;
   margin: auto;
   padding: 20px;
   margin-top: 40px;
@@ -9,12 +9,13 @@
 .payment {
   background-color: rgb(242, 242, 242);
   text-align: start;
-  width: 40%;
+  width: 80%;
   margin: auto;
   padding: 20px;
   margin-top: 40px;
 }
 .credit {
+  width: 100%;
   border: 3px solid black;
   padding: 15px;
   margin-top: 10px;
@@ -41,8 +42,52 @@ label {
 .submitBtn {
   background-color: black;
   color: aliceblue;
-  width: 30%;
-  font-weight: 700;
+  width: auto;
+  font-weight: 400;
   font-size: 20px;
   border-radius: 4px;
+  padding: 10px;
+
+  
+}
+.SubmitBtn{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+.checkoutDiv{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.mainDiv{
+  display: flex;
+  width: 100%;
+}
+
+.mainDiv div{
+  width: 100%;
+  /* border: 1px solid black; */
+}
+
+.items{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  border: 1px solid black;
+}
+.items img{
+  /* border: 1px solid black; */
+}
+.total{
+ text-align: right;
+ padding: 20px;
+}
+.items div{
+  padding: 10px;
 }

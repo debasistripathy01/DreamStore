@@ -37,7 +37,7 @@ export const getCartDataError = () => {
 export const getdata = () => (dispatch) => {
   dispatch(getCartDataRequest());
   return axios
-    .get("https://server-dermstore.onrender.com/cartproduct")
+    .get("https://server-dermstore.onrender.com/cart")
     .then((res) => {
       dispatch(getCartDataSuccess(res.data));
       // console.log(res.data)

@@ -54,14 +54,18 @@ export const Navbar = () => {
   const [dropdown11, setDropdown11] = useState(false);
 
   const [dropdown12, setDropdown12] = useState(false);
-  
+  const [ifLogin, setLogin] = useState(false)
   const { isAuth } = useContext(AuthContext);
   let Token = JSON.parse(localStorage.getItem("Token"));
   const navigate=useNavigate()
 const { CartCount } = useSelector((state) => state);
 
 
-
+// if(name===""){
+//   setLogin(false)
+// }else{
+//   setLogin(true)
+// }
   //----- Handle Search for Search Bar
 
   function handleSearch(e) {
@@ -98,19 +102,19 @@ const { CartCount } = useSelector((state) => state);
 
   // Navigate to Login Page
   const handleLogin = () => {
-    // navigate("/login");
+    navigate("/login");
   };
 
 
   // Register the USER  data in registering PAage
 
   const handleRegister = () => {
-    // navigate("/Signup");
+    navigate("/Signup");
   };
 
+const name = localStorage.getItem("userName")
 
-
-
+console.log(name)
 
 
   const SetToReduce = () => {
@@ -254,6 +258,7 @@ const { CartCount } = useSelector((state) => state);
                 isAuth ? (
                   <div class={css.onLoginDropDown}>
                     <div class={css.logButtDiv}>
+                      
                       <button
                         className={css.loglot}
                         onClick={() => {
@@ -274,6 +279,7 @@ const { CartCount } = useSelector((state) => state);
                 ) : (
                   <div class={css.onLogoutDropDown}>
                     <div class={css.logButtDiv}>
+                      <button>{name}</button>
                       <button className={css.loglot} onClick={handleLogin}>
                         Login
                       </button>

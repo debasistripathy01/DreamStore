@@ -62,12 +62,12 @@ label {
   flex-direction: column;
   width: 100%;
 }
-.mainDiv{
+.mainDiv1{
   display: flex;
   width: 100%;
 }
 
-.mainDiv div{
+.mainDiv1 div{
   width: 100%;
   /* border: 1px solid black; */
 }

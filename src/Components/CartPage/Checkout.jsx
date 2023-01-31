@@ -39,7 +39,7 @@ export const Checkout = () => {
   return (
     <div>
       <Navbar />
-      <div className="mainDiv">
+      <div className="mainDiv1">
 
         <div className="checkoutDiv">
           <h1 style={{ fontSize: "20px" }}>Orders</h1>

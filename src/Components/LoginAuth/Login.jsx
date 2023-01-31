@@ -48,7 +48,16 @@ const Login = () => {
             isClosable: true,
           });
           navigate("/");
-        } 
+        } else{
+          toast({
+            title: "Error",
+            description: "Invalid Credentials",
+            status: "error",
+            position: "top",
+            duration: 3000,
+            isClosable: true,
+          })
+        }
       })
       .catch((err) => {
         console.log(err.message);

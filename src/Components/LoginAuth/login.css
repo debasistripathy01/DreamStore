@@ -1,115 +1,229 @@
 .main {
+
     display: flex;
+
     margin: auto;
+
     /* align-items: center; */
+
     justify-content: center;
+
     gap: 100px;
+
     line-height: 20px;
 
+
+
 }
+
+
+
+
 
 
 
 .mainDiv {
+
     width: 30%;
+
     border: 1px solid black;
+
     text-align: left;
+
     line-height: 14px;
+
     padding: 30px;
+
     margin-top: 100px;
+
 }
+
+
 
 @media (max-width: 1000px) {
+
     .mainDiv {
+
         width: 40%;
+
         border: 1px solid black;
+
         padding: 10px;
 
+
+
     }
+
+
 
     .main {
+
         gap: 50px;
+
         /* font-size: 10px; */
+
     }
 
+
+
 }
+
+
 
 @media (max-width: 800px) {
+
     .mainDiv {
+
         width: 50%;
+
         border: 1px solid black;
 
+
+
     }
+
+
 
     .main {
+
         gap: 10px;
+
     }
+
 }
+
+
 
 .main h1 {
+
     /* border-color: #000000; */
+
     /* border-style: solid; */
+
     /* border-width: 2px; */
+
     color: #333333;
+
     font-family: Lato;
+
     font-size: 24px;
+
     line-height: 33px;
+
     margin: -2px 0px 24px -2px;
+
     padding: 2px
+
 }
+
+
 
 .main label {
+
     color: #333333;
+
     font-size: 14px;
+
     font-weight: 700;
+
     /* line-height: 20px; */
+
     padding: 0px 0px 0px 8px
+
 }
+
+
 
 .main input {
+
     background-color: #ffffff;
+
     /* box-shadow: #ffffff 0px 0px 0px 40px; */
+
     color: #333333;
+
     font-family: Lato;
+
     font-size: 14px;
+
     line-height: 20px;
+
     margin-bottom: 10px;
+
     margin-top: 5px;
+
     border: 2px solid black;
+
     padding: 1px 2px;
+
     height: 50px;
+
 }
 
+
+
 .buttoncontinue {
+
     background-color: #262626;
+
     border-color: #262626;
+
     border-style: solid;
+
     border-width: 1px;
+
     color: #ffffff;
+
     display: flex;
+
     font-family: Lato;
+
     font-size: 14px;
+
     justify-content: center;
+
     align-items: center;
+
     line-height: 20px;
+
     padding: 10px 38px;
+
     width: 100%;
+
     text-transform: uppercase;
+
     height: 60px;
+
     
+
 }
+
+
 
 @media (max-width: 500px) {
 
+
+
     .main {
+
         display: flex;
+
         flex-direction: column;
-        line-height: 0%;
-    }
-    .mainDiv {
-        width: 100%;
-        border: 1px solid black;
+
         line-height: 0%;
 
     }
+
+    .mainDiv {
+
+        width: 100%;
+
+        border: 1px solid black;
+
+        line-height: 0%;
+
+
+
+    }
+
 }

@@ -6,6 +6,7 @@ const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
 const {UserModel} = require("./models/user.model")
 const port = process.env.port
+const cors = require("cors")
 
 //Import All the Roouters Here
 const {userRouter} = require("./Router/user.route");
@@ -15,6 +16,10 @@ const  {productRouter} = require("./Router/product.route");
 
 const app = express();
 app.use(express.json());
+
+app.use(cors({
+    origin : "*"
+}))
 
 app.get("/", async(req, res) => {
     res.send("homepage routes are /users /mens /womens /cart /order");

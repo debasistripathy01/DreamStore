@@ -15,7 +15,7 @@ const login = (payload) => (dispatch)=>{
 const signup = (payload) => (dispatch)=>{
     // dispatch({type : types.USER_SIGNUP_REQUEST})
     console.log(payload)
-    return axios.post("https://reqres.in/api/register",payload)
+    return axios.post("http://localhost:8085/users/signup",payload)
     .then((r)=>{
         console.log(r,"hfgvhg")
         dispatch({type : types.USER_SIGNUP_SUCCESS})

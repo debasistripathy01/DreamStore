@@ -9,6 +9,7 @@ import { useState } from "react"
 import { useDispatch } from "react-redux"
 import { useNavigate } from "react-router-dom"
 import { signup } from "../../Redux/login/action"
+import axios from "axios"
 
 
 
@@ -19,54 +20,58 @@ function Signup() {
     const [password, setPassword] = useState("")
     const [confirmEmail, serconfirmEmail] = useState("")
     const [confirmPass, setConfirmPassword] = useState("")
-    const dispatch = useDispatch()
     const navigate = useNavigate()
 
     const toast = useToast()
     
-
-    const handleSubmit = (e)=>{
-        e.preventDefault()
-        if(password!==confirmPass || email!==confirmEmail){
-            toast({
-                title: "Worng Credentials",
-                description: "Credentials Doesn't match",
-                status: "error",
-                position: "top",
-                duration: 2000,
-                isClosable: true,
-              });
+    const [open, setOpen] = useState(false);
+    const [error, changeError] = useState("");
+    const toggle = () => {
+      setOpen(!open);
+    };
+    // const [user, setUser] = useState({
+    //   name: "",
+    //   email: "",
+    //   password: "",
+    // });
+    // const handleChange = (e) => {
+    //   const { name, value } = e.target;
+    //   setUser({ ...user, [name]: value });
+    // };
+  
+    
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const payload = {
+            name,
+            email,
+            password,
         }
-        else if(password.length < 5){
-            toast({
-                title: "Enter a secure Password",
-                description: "Password to Short",
-                status: "error",
-                position: "top",
-                duration: 2000,
-                isClosable: true,
-              });
-        }
-        else if(email&&password){
-            toast({
-                title: "Welcome ",
-                description: "Successfully Signup ",
-                status: "success",
-                position: "top",
-                duration: 1000,
-                isClosable: true,
-              });
-            dispatch(signup({email,password})).then((r)=>{
-
-                localStorage.setItem("email",email)
-                localStorage.setItem("pass",password)
-                localStorage.setItem("name",name)
-
-                navigate("/login")
-
-            })
-        }
-    }
+        console.log(payload)
+        fetch("http://localhost:8085/user/signup",{
+            method : "POST",
+            body : JSON.stringify(payload),
+            headers:{
+                "Content-type" :"application/json"
+            }
+        }).then(res=>res.json())
+        .then((res)=>{
+            console.log(res.user.name)
+            if (res.mess==="Registred") {
+                
+                toast({
+                    title: "Account created.",
+                    description: "Successfully Created your Account",
+                  status: "success",
+                  position: "top",
+                  duration: 3000,
+                  isClosable: true,
+                });
+                navigate("/login");
+              }
+        })
+        .catch(err=>console.log(err))
+      };
 
     return (
         <div className="mainSignup">
@@ -92,11 +97,11 @@ function Signup() {
                         <form>
                             <div>
                                 <label>* Full Name</label>
-                                <input type='text' value={name} onChange={(e)=>setName(e.target.value)}/>
+                                <input type='text' value={name} name="name" onChange={(e)=>setName(e.target.value)}/>
                             </div>
                             <div>
                                 <label>* Email address</label>
-                                <input type='email' value={email} onChange={(e)=>setEmail(e.target.value)} />
+                                <input type='email' value={email} name="email" onChange={(e)=>setEmail(e.target.value)} />
                             </div>
                             <div>
                                 <label>* Confirm Email address</label>
@@ -104,7 +109,7 @@ function Signup() {
                             </div>
                             <div>
                                 <label>* Password</label>
-                                <input type='password'  value={password} onChange={(e)=>setPassword(e.target.value)}/>
+                                <input type='password'  value={password} name="password" onChange={(e)=>setPassword(e.target.value)}/>
                             </div>
                             <div>
                                 <label>* Confirm Password</label>

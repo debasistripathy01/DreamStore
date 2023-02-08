@@ -170,17 +170,17 @@ console.log(name)
                 placeholder="Search for a Products and Brand..."
                 onChange={handleSearch}
               />
-              <button className={css.searchBtn}>
-                <svg
+              {/* <button className={css.searchBtn}> */}
+                {/* <svg
                   width="22"
                   height="22"
                   border="none"
                   viewBox="0 0 22 22"
                   stroke="black"
                   fill="white"
-                >
-                  <title>Search</title>
-                  <path
+                > */}
+                  {/* <title>Search</title> */}
+                  {/* <path
                     d="M22 22l-6.344-6.344M10 18a8 8 0 100-16 8 8 0 000 16z"
                     stroke="inherit"
                     fill="white"
@@ -188,9 +188,9 @@ console.log(name)
                     strokeMiterlimit="0"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                  ></path>
-                </svg>
-              </button>
+                  ></path> */}
+                {/* </svg> */}
+              {/* </button> */}
 
               {searchDiv && (
                 <div className={css.searchResultDiv}>

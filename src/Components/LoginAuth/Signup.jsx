@@ -11,15 +11,23 @@ import { useNavigate } from "react-router-dom"
 import { signup } from "../../Redux/login/action"
 import axios from "axios"
 
+let initialState={
+    name: "",
+    email: "",
+    password: "",
+    number: "",
+    status: "user",
+
+}
 
 
 function Signup() {
     
-    const [email, setEmail] = useState("")
-    const [name, setName] = useState("")
-    const [password, setPassword] = useState("")
-    const [confirmEmail, serconfirmEmail] = useState("")
-    const [confirmPass, setConfirmPassword] = useState("")
+    // const [email, setEmail] = useState("")
+    // const [name, setName] = useState("")
+    // const [password, setPassword] = useState("")
+    // const [confirmEmail, serconfirmEmail] = useState("")
+    // const [confirmPass, setConfirmPassword] = useState("")
     const navigate = useNavigate()
 
     const toast = useToast()
@@ -29,49 +37,27 @@ function Signup() {
     const toggle = () => {
       setOpen(!open);
     };
-    // const [user, setUser] = useState({
-    //   name: "",
-    //   email: "",
-    //   password: "",
-    // });
-    // const handleChange = (e) => {
-    //   const { name, value } = e.target;
-    //   setUser({ ...user, [name]: value });
-    // };
+    const [user, setUser] = useState({
+      name: "",
+      email: "",
+      password: "",
+    });
+    const handleChange = (e) => {
+      const { name, value } = e.target;
+      setUser({ ...user, [name]: value });
+    };
   
+    
     
     const handleSubmit = (e) => {
         e.preventDefault();
-        const payload = {
-            name,
-            email,
-            password,
-        }
-        console.log(payload)
-        fetch("http://localhost:8085/user/signup",{
-            method : "POST",
-            body : JSON.stringify(payload),
-            headers:{
-                "Content-type" :"application/json"
-            }
-        }).then(res=>res.json())
-        .then((res)=>{
-            console.log(res.user.name)
-            if (res.mess==="Registred") {
-                
-                toast({
-                    title: "Account created.",
-                    description: "Successfully Created your Account",
-                  status: "success",
-                  position: "top",
-                  duration: 3000,
-                  isClosable: true,
-                });
-                navigate("/login");
-              }
-        })
-        .catch(err=>console.log(err))
-      };
+        localStorage.setItem("userName", user.name);
+        axios.post("https://lucky-pink-underclothes.cyclic.app/user/signup", user).then(res => {if(res.data.mess==="Registred"){navigate("/login")}}).catch((err) => navigate("/login"))
+        console.log(user);
+        setUser(user);
+        // console.log(payload)
+
+    }
 
     return (
         <div className="mainSignup">
@@ -97,23 +83,23 @@ function Signup() {
                         <form>
                             <div>
                                 <label>* Full Name</label>
-                                <input type='text' value={name} name="name" onChange={(e)=>setName(e.target.value)}/>
+                                <input type='text' value={user.name} name="name" onChange={handleChange}/>
                             </div>
                             <div>
                                 <label>* Email address</label>
-                                <input type='email' value={email} name="email" onChange={(e)=>setEmail(e.target.value)} />
+                                <input type='email' value={user.email} name="email" onChange={handleChange} />
                             </div>
                             <div>
                                 <label>* Confirm Email address</label>
-                                <input type='email' value={confirmEmail} onChange={(e)=>serconfirmEmail(e.target.value)}  />
+                                <input type='email'  />
                             </div>
                             <div>
                                 <label>* Password</label>
-                                <input type='password'  value={password} name="password" onChange={(e)=>setPassword(e.target.value)}/>
+                                <input type='password'  value={user.password} name="password" onChange={handleChange}/>
                             </div>
                             <div>
                                 <label>* Confirm Password</label>
-                                <input type='password' value={confirmPass} onChange={(e)=>setConfirmPassword(e.target.value)} />
+                                <input type='password'  />
                             </div>
                             <div>
                                 <label>Cell Phone Number (Optional)</label>

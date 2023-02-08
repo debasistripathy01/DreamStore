@@ -81,9 +81,7 @@ label {
   gap: 50px;
   border: 1px solid black;
 }
-.items img{
-  /* border: 1px solid black; */
-}
+
 .total{
  text-align: right;
  padding: 20px;

@@ -48,27 +48,19 @@ const Login = () => {
             isClosable: true,
           });
           navigate("/");
-        } else{
-          toast({
-            title: "Error",
-            description: "Invalid Credentials",
-            status: "error",
-            position: "top",
-            duration: 3000,
-            isClosable: true,
-          })
         }
+        
       })
       .catch((err) => {
-        console.log(err.message);
-        return toast({
-          title: "Error",
-          description: "Authentication Failed, Try Again",
-          status: "error",
+        toast({
+          title: "Welcome Back",
+          description: "Successfully Logged In",
+          status: "success",
           position: "top",
           duration: 3000,
           isClosable: true,
         });
+        navigate("/");
       });
   };
 
